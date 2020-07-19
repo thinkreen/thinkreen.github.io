@@ -281,3 +281,15 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: sinlge
+      author_profile: true
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
