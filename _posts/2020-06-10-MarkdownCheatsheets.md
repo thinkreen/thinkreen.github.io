@@ -44,7 +44,7 @@ Put 1-6 hash marks(#) at the beginning of the line
 ```
 renders as
 
-<img style="float: left;" src="/assets/images/headers.png">
+<img style="float: left;" src="/assets/images/headers.png"><br>
 
 ## Emphasis
 
