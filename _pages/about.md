@@ -7,7 +7,7 @@ author_profile: true
 
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
 
-[click](resume.pdf)
+Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
 
 ## 2017-
 ### Manufacturing System Engineer at Samsung Austin Semiconductor
