@@ -39,7 +39,7 @@ Passionate system development engineer with 6+ years of progressive experience i
 <p>Studied on manufacturing and robotics.</p>
 
 
-## Resume
+## RESUME
 Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
 
 
