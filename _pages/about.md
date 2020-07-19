@@ -7,6 +7,8 @@ author_profile: true
 
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
 
+[click](resume.pdf)
+
 ## 2017-
 ### Manufacturing System Engineer at Samsung Austin Semiconductor
 <p>Developing and improving manufacturing system logics on scheduling modules and simulation engines to forecast factory inventory position, as well as optimizing automatic dispatching system logic by utilization of linear programming.<br>
@@ -15,7 +17,7 @@ Passionate system development engineer with 6+ years of progressive experience i
 <br>• Designed and developed input forecasting model from MP/FP in Java leading to 20% reduce tool idle time.
 </p>
 
-[click](resume.pdf)
+
 
 ## 2015-2017
 ### Production Engineer at A123 Systems
@@ -25,12 +27,15 @@ Passionate system development engineer with 6+ years of progressive experience i
 </p>
 
 
+
 ## 2013-2015
 ### Manufacturing R&D Engineer at PSA Inc
 <p>Developed new manufacturing automation and its process to improve performance and quality.<br>
 <br>• Developed an automatic vision inspection system to check non-conforming products and mixing parts in PLC and Visual Basic. Contributed to reduce a field claim and a scrap cost up to 77% (approx. $173,000/year)
 </p>
-	
+
+
+
 ## 2013
 ### BS in Mechanical Engineering<br>University at Buffalo, State University of New York
 <p>Studied on manufacturing and robotics.</p>
