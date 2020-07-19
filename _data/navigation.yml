@@ -8,5 +8,10 @@ main:
     url: /_posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Portfolio"
+    url: /_portfolio/
+
+
+nav:
+  About:
+    - '/about/'
