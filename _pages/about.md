@@ -8,16 +8,6 @@ author_profile: true
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
 
 <section class="timeline-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h1>Here is a little of my story</h1>
-							<p class="lead">
-								Here is my key experiences. If you want to download my resume, click <a href ="sunwookKimResume_V2.pdf">here.</a>
-							</p>	
-						</div>
-					</div>
-					
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="timeline-event">
