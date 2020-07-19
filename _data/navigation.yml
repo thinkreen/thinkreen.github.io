@@ -3,6 +3,6 @@ main:
   - title: "About"
     url: /about/
   - title: "Posts"
-    url: /year-archive/
+    url: /test/year-archive/
   - title: "Portfolio"
     url: /test/_portfolio/
