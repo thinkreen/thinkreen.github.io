@@ -11,6 +11,11 @@ Hi, I am David Kim.<br>
 I am so excited to share my experiences and TILs through my porfolio blog. If you have different opinion or suggestion, please add your comment or send me an email.<br>
 Thank you so much.<br>
 
+POSTING PLAN
+* All project portfolios
+* (TIL)Today I Learned
+* Data structures and Algorithms
+* Machine learning in Python with Tensorflow/Azure/AWS.
 
 
 
