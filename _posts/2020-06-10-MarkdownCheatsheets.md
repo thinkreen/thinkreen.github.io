@@ -34,9 +34,9 @@ Put 1-6 hash marks(#) at the beginning of the line
 ### Header 3
 ```
 renders as
-
+<div>
 <img style="float: left;" src="/assets/images/headers.png">
-<br>
+</div>
 
 ## Emphasis
 
