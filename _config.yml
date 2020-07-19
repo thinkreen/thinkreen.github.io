@@ -92,6 +92,8 @@ analytics:
 
 
 # Site Author
+sidebar:
+    - title: "Title"
 author:
   name             : "DAVID S. KIM"
   avatar           : /assets/images/bio-photo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
