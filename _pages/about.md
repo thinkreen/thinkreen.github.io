@@ -15,6 +15,8 @@ Passionate system development engineer with 6+ years of progressive experience i
 <br>• Designed and developed input forecasting model from MP/FP in Java leading to 20% reduce tool idle time.
 </p>
 
+[click](resume.pdf)
+
 ## 2015-2017
 ### Production Engineer at A123 Systems
 <p>Developed and refined manufacturing process and the system to monitor the inventory position and trace scraps.<br>
