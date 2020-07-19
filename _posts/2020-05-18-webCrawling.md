@@ -102,4 +102,3 @@ export PATH=$PATH:/usr/local/bin/chromedriver
 
 ```
 
-<script data-ad-client="ca-pub-3395551554460436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
