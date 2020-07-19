@@ -278,15 +278,17 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: sinlge
       author_profile: true
+
   - scope:
       path: ""
       type: docs
