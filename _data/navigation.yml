@@ -4,4 +4,6 @@ main:
     url: /_pages/about/
   - title: "Posts"
     url: /categories/
+  - title: "Portfolio"
+    url: /_portfolio/
  
