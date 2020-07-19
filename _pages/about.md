@@ -44,7 +44,7 @@ Here is my key experiences. If you want to see my resume, click [here](resume.pd
 
 
 ## POSTING PLAN
-* All project portfolios
+* MY project portfolios
 * (TIL)Today I Learned
 * Data structures and Algorithms
 * Machine learning in Python with Tensorflow/Azure/AWS.
