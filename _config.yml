@@ -290,7 +290,7 @@ defaults:
       related: true
   # _pages 부분 추가
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     value:
       layout: single
