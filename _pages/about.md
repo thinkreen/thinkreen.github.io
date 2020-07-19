@@ -14,9 +14,9 @@ Thank you so much.<br>
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
 
 
-# WORK EXPERIENCES
-## 2017-
-### Manufacturing System Engineer at Samsung Austin Semiconductor
+## WORK EXPERIENCES
+### 2017-
+#### Manufacturing System Engineer at Samsung Austin Semiconductor
 <p>Developing and improving manufacturing system logics on scheduling modules and simulation engines to forecast factory inventory position, as well as optimizing automatic dispatching system logic by utilization of linear programming.<br>
 <br>• Awarded by president for the INNOVATION: Developed FABIN/OUT Automation system to handle all fabin/out manual activities and reduce needed manpower, time and chance of error by JAVA and ezDFS. 50% reduction of manpower (4 to 2 speicalist/shift) and 72% reduction in lot create/start time (60.6 to 16.9 mins/lot).
 <br>• Awarded Smart Manufacturing Bronze Certification.
@@ -25,8 +25,8 @@ Passionate system development engineer with 6+ years of progressive experience i
 
 
 
-## 2015-2017
-### Production Engineer at A123 Systems
+### 2015-2017
+#### Production Engineer at A123 Systems
 <p>Developed and refined manufacturing process and the system to monitor the inventory position and trace scraps.<br>
 <br>• Improved equipment efficiency up to 87% and reduced scrap cost by 14% per month by reconfiguring the plant layout and production process. 
 <br>• Reduced the downtime up to 17% per pack and improved takt time in the pack assembly line.
@@ -34,19 +34,19 @@ Passionate system development engineer with 6+ years of progressive experience i
 
 
 
-## 2013-2015
-### Manufacturing R&D Engineer at PSA Inc
+### 2013-2015
+#### Manufacturing R&D Engineer at PSA Inc
 <p>Developed new manufacturing automation and its process to improve performance and quality.<br>
 <br>• Developed an automatic vision inspection system to check non-conforming products and mixing parts in PLC and Visual Basic. Contributed to reduce a field claim and a scrap cost up to 77% (approx. $173,000/year)
 </p>
 
 
 
-# EDUCATION
-## 2013
-### BS in Mechanical Engineering<br>University at Buffalo, State University of New York
+## EDUCATION
+### 2013
+#### BS in Mechanical Engineering<br>University at Buffalo, State University of New York
 <p>Studied on manufacturing and robotics.</p>
 
 
-# Resume
+## Resume
 Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
