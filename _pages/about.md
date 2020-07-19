@@ -3,16 +3,18 @@ title: "About"
 last_modified_at: 2020-07-01T12:00:00+09:00
 toc: true
 author_profile: true
+toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
+
+## INTRO
 Hi, I am David Kim.<br>
-I am so excited to share my experiences and TILs through my porfolio blog.<br>
-If you have different opinion or suggestion, please add your comment or send me an email.<br>
+I am so excited to share my experiences and TILs through my porfolio blog. If you have different opinion or suggestion, please add your comment or send me an email.<br>
 Thank you so much.<br>
 
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
 
-Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
 
+# WORK EXPERIENCES
 ## 2017-
 ### Manufacturing System Engineer at Samsung Austin Semiconductor
 <p>Developing and improving manufacturing system logics on scheduling modules and simulation engines to forecast factory inventory position, as well as optimizing automatic dispatching system logic by utilization of linear programming.<br>
@@ -40,6 +42,11 @@ Here is my key experiences. If you want to see my resume, click [here](resume.pd
 
 
 
+# EDUCATION
 ## 2013
 ### BS in Mechanical Engineering<br>University at Buffalo, State University of New York
 <p>Studied on manufacturing and robotics.</p>
+
+
+# Resume
+Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
