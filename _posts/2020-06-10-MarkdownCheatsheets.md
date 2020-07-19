@@ -10,6 +10,7 @@ toc: true
 toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
 
+
 # Markdown Cheatsheet
 This is intended as a quick reference and showcase for Markdown.
 For more cheatsheet, check [Adam-P Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -43,9 +44,7 @@ Put 1-6 hash marks(#) at the beginning of the line
 ```
 renders as
 
-# Header 1 
-## Header 2 
-### Header 3
+<img style="float: left;" src="screenshot1.png">
 
 ## Emphasis
 
