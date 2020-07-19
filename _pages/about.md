@@ -11,13 +11,6 @@ Hi, I am David Kim.<br>
 I am so excited to share my experiences and TILs through my porfolio blog. If you have different opinion or suggestion, please add your comment or send me an email.<br>
 Thank you so much.<br>
 
-POSTING PLAN
-* All project portfolios
-* (TIL)Today I Learned
-* Data structures and Algorithms
-* Machine learning in Python with Tensorflow/Azure/AWS.
-
-
 
 ## WORK EXPERIENCES
 Passionate system development engineer with 6+ years of progressive experience in designing the manufacturing system architecture, predicting the factory inventory position and optimizing the manufacturing schedule in semiconductor and Li-polymer battery industries. At Samsung Austin Semiconductor, implemented input and lot position forecasting models improving forecast accuracy by 24%.
@@ -48,3 +41,10 @@ Passionate system development engineer with 6+ years of progressive experience i
 
 ## Resume
 Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
+
+
+## POSTING PLAN
+* All project portfolios
+* (TIL)Today I Learned
+* Data structures and Algorithms
+* Machine learning in Python with Tensorflow/Azure/AWS.
