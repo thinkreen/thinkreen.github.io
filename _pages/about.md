@@ -40,7 +40,7 @@ Passionate system development engineer with 6+ years of progressive experience i
 
 
 ## RESUME
-Here is my key experiences. If you want to see my resume, click [here](resume.pdf)
+Here is my key experiences. If you want to see my resume, click [here](resume.pdf).
 
 
 ## POSTING PLAN
