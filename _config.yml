@@ -283,7 +283,7 @@ defaults:
       share: true
       related: true
       toc: true
-      toc_ads: true
+      toc_ads: true # 구글 애드센스 추가
       toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
   # _pages 
   - scope:
@@ -292,6 +292,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+      toc: true
+      toc_ads: true # 구글 애드센스 추가
+      toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
   # _portfolio
   - scope:
       path: ""
