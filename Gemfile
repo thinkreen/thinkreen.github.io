@@ -17,4 +17,5 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-algolia"
   gem "rake"
+  gem "jekyll-last-modified-at"
 end
