@@ -9,8 +9,6 @@ last_modified_at: 2020-07-19T12:00:00+09:00
 ---
 
 
-# Blog environments
-
 # Intro
 현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
 지금 제가 사용하고 있는 thinkreen 블로그는 `Github.io` 와 `jekyll`을 기반으로 하고있고, `minimal-mistake` 테마를 사용하고 있습니다.
