@@ -1,10 +1,10 @@
 ---
 title: "Web Crawling by Selenium"
 categories: 
-    - "Blogging"
+    - "blogging"
 tags:
-    - "Blogging"
-    - "Environments"
+    - "blogging"
+    - "jekyll"
 last_modified_at: 2020-07-190T12:00:00+09:00
 ---
 
@@ -72,3 +72,11 @@ thinkreen.github.io
 ```python
 
 ```
+
+# Posting step
+1. write a draft.
+2. Run on test server and check grammars/error.
+3. Moving a file to `_posts` directory after posting.
+4. Commit and push.
+5. Check updated posting.
+6. Keep updating if needed.
