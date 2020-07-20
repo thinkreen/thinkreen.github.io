@@ -1,11 +1,11 @@
 ---
 title: "Web Crawling by Selenium"
 categories: 
-    - "Machine Learning"
+    - "machine learning"
 tags:
-    - "Machine Learning"
-    - "Python"
-    - "Crawling"
+    - "machine learning"
+    - "python"
+    - "crawling"
 last_modified_at: 2020-07-01T12:00:00+09:00
 ---
 
