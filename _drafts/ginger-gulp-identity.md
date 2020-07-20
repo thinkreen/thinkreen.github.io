@@ -1,30 +1,26 @@
 ---
-title: "Ginger Gulp Identity"
-excerpt: "Ginger Gulp design system including logo mark, website design, and branding applications."
-header:
-  image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
-sidebar:
-  - title: "Role"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
-gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+title: "Begin with TIL (Today I learned)"
+categories: 
+    - "TIL"
+tags:
+    - "TIL"
+last_modified_at: 2020-07-10T23:00:00+09:00
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
+![](/assets/images/TIL_Images/2020-07-10-TIL.jpeg)
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+I am going to summarize what I did and what I learned today in either English or Korean.
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+# What I did
+- 깃헙을 만든지 삼년이 지났지만, 깃헙을 제대로 활용하지 못하고 마땅한 포트폴리오도 없어서 [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/) 템플렛을 적용한 [jekyll](https://jekyllrb.com/) theme으로 github 블로그를 만들었다. 블로그를 만들려고 여러번 시도를 해보았지만, 막상 나의 성장과 정보 공유를 위해 뭔가를 만들어 본다는 것이 익숙하지 않았다. 최근에 미루고 미루던 machine learning을 공부하면서 알게된 markdown을 이용한 글쓰기가 상당이 재밌고 좋아서 TIL(Today I learned)를 꾸준히 이어가고 싶다. 
+- 여러 템플렛으로 만들어 보았지만, 개인적으로 minimal-mistakes가 가장 가독성이 좋았고, 정리가 잘 되어있어서 처음 시작하기에 좋은 것 같다.
+- 기본적인 HTML/CSS/JavaScript를 알긴 하지만, 막상 그것들을 사용하여 페이지를 만들려고 하니 꽤나 힘들었다. 하지만 이번 기회에 Ruby를 포함해서 제대로 공부해봐야겠다.
+
+# What I learn
+- 무언가 새로운 것을 시작할 때 완벽하게 공부하고 해야지 하면서 미루지 말고, 우선 작은 것 부터라도 시작을 하자.
+- 머릿속으로 아는 것과 실제로 만들어 보는 것에는 차이가 상당히 있다. 학습하는 시간과 실습하는 시간을 적절히 분배하자.
+- 영어가 모국어가 아니다 보니, 한국어로 먼저 기본 지식을 습득한 후에 영어로 깊게 파고 들어가자.
+
+# What to do
+- Data structure 공부 및 내용 정리/포스팅
+- Machine learning 포트폴리오 정리
