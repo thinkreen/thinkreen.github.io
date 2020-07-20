@@ -14,6 +14,14 @@ last_modified_at: 2020-07-19T12:00:00+09:00
 지금 제가 사용하고 있는 thinkreen 블로그는 `Github.io` 와 `jekyll`을 기반으로 하고있고, `minimal-mistake` 테마를 사용하고 있습니다.
 그리고 개발환경은 Git repository를 매번 clone한 후 `Visual Studio Code`를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.
 
+# Posting step
+1. write a draft.
+2. Run on test server and check grammars/error.
+3. Moving a file to `_posts` directory after posting.
+4. Commit and push.
+5. Check updated posting.
+6. Keep updating if needed.
+
 # Structure
 아직은 `minimal-mistake` 테마의 구조와 일부 파일들을 그대로 가지고 있지만, 조금씩 수정을 통해 구조를 정리할 예정이고 현재 전반적인 블로구 구조입니다.
 
@@ -71,10 +79,20 @@ thinkreen.github.io
 
 ```
 
-# Posting step
-1. write a draft.
-2. Run on test server and check grammars/error.
-3. Moving a file to `_posts` directory after posting.
-4. Commit and push.
-5. Check updated posting.
-6. Keep updating if needed.
+# jekyll environment
+테스트 서버 구동을 위한 jekyll 환경 설정
+
+```
+gem install bundler
+gem install jekyll
+
+bundle install
+
+# Run test server
+bundle exec jekyll serve --host 0.0.0.0 --port 80
+
+# See drafts (all files in /_draft/)
+bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
+```
+
+
