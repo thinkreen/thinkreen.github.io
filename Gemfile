@@ -18,4 +18,5 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "rake"
   gem "jekyll-last-modified-at"
+  gem "jekyll-include-cache"
 end
