@@ -7,8 +7,6 @@ tags:
     - "Python"
     - "Crawling"
 last_modified_at: 2020-07-01T12:00:00+09:00
-toc: true
-toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
 
 # Google image download using Selenium
