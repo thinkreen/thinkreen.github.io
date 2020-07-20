@@ -11,19 +11,42 @@ toc: true
 toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
 
-## Google image downloads
+# Google image download using Selenium
+머신 러닝 training을 위한 이미지 크롤링 라이브러리 [google_images_downloads](https://pypi.org/project/google_images_download/) 가 잘 실행되지 않아서 확인해 보았다.<br>
+2020년 2월부터 Google images DOM이 image element class="rg_meta notranslate"에서 "rg_i Q4LuWd" 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 [gids](https://pypi.org/project/gids/) 패키지를 이용하는 방법을 사용하였다.
 
-2020년 2월부터 Google DOM 변경으로 인하여 google_images_downloads대체를 위하여 Selenium을 사용한 gids 패키지를 이용하여 이미지를 추출한다.
+```
+def get_soup(url,header):
+    return BeautifulSoup(urllib2.urlopen(urllib2.Request(url,headers=header)),'html.parser')    
 
-### Install
+def main(args):
+    query = "typical face"
+    query = query.split()
+    query = '+'.join(query)
+    url = "https://www.google.co.in/search?q="+query+"&source=lnms&tbm=isch"
+    headers = {}
+    headers['User-Agent'] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+    soup = get_soup(url, headers)
+    for a in soup.find_all("img", {"class": "rg_i"}):
+        wget.download(a.attrs["data-iurl"], a.attrs["data-iid"])
+
+
+if __name__ == '__main__':
+    from sys import argv
+    try:
+        main(argv)
+    except KeyboardInterrupt:
+        pass
+    sys.exit()
+```
+
+# Install Package
 ```
 pip install gids
 ```
 
-### Example code
-
-
-
+# Usage
+## Example code
 ```python
 from gids import builder
 
@@ -53,6 +76,8 @@ items = [first_item, second_item]
 downloader = builder.build(config)
 
 downloader.download(items)
+```
+## Result
 ```
 
     Loading Pages. This may take a few moments...
@@ -84,10 +109,9 @@ downloader.download(items)
     Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_9]
     Whale Shark download completed. [Successful count = 10].
     Total time is 36.451616048812866 seconds.
+```
 
-
-## Troubleshooting
-
+# Troubleshooting
 아래와 같이 에러가 나올 때 chromedriver파일이 있는 디렉토리로 PATH를 설정해줌.
 
 No found chromedriver in this environment.
@@ -96,9 +120,3 @@ Install on your machine. exception: Message: 'chromedriver' executable needs to 
 ```
 export PATH=$PATH:/usr/local/bin/chromedriver
 ```
-
-
-```python
-
-```
-
