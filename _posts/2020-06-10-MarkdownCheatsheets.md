@@ -6,8 +6,6 @@ tags:
     - "Jupyter Notebook"
     - "Markdown"
 last_modified_at: 2020-06-10T12:00:00+09:00
-toc: true
-toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
 
 
