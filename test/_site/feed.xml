@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-22T01:19:07-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;p&gt;현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
+지금 제가 사용하고 있는 thinkreen 블로그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github.io&lt;/code&gt; 와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;을 기반으로 하고있고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minimal-mistake&lt;/code&gt; 테마를 사용하고 있습니다.
+그리고 개발환경은 Git repository를 매번 clone한 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt;를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.&lt;/p&gt;
+
+&lt;h1 id=&quot;posting-step&quot;&gt;Posting step&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;write a draft.&lt;/li&gt;
+  &lt;li&gt;Run on test server and check grammars/error.&lt;/li&gt;
+  &lt;li&gt;Moving a file to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory after posting.&lt;/li&gt;
+  &lt;li&gt;Commit and push.&lt;/li&gt;
+  &lt;li&gt;Check updated posting.&lt;/li&gt;
+  &lt;li&gt;Keep updating if needed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;structure&quot;&gt;Structure&lt;/h1&gt;
+&lt;p&gt;아직은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minimal-mistake&lt;/code&gt; 테마의 구조와 일부 파일들을 그대로 가지고 있지만, 조금씩 수정을 통해 구조를 정리할 예정이고 현재 전반적인 블로구 구조입니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thinkreen.github.io
+├── _data                      # 커스텀 가능한 다양한 데이터 파일 존재 data files for customizing the theme
+|  ├── navigation.yml          # 네비게이션바, 사이드바 등이 정의 main navigation links
+|  └── ui-text.yml             # 언어별 표시되는 단어들의 정의 text used throughout the theme's UI
+├── _drafts                    # 블로그에 포스팅 되기 전 초안 밑 작업 파일들이 저장되는 곳
+├── _includes                  # includes를 사용하여 가져올 수 있는 파일들. (현재 하나씩 공부중)
+|  ├── analytics-providers     # snippets for analytics (Google and custom)
+|  ├── comments-providers      # snippets for comments
+|  ├── footer                  # custom snippets to add to site footer
+|  ├── head                    # custom snippets to add to site head
+|  ├── feature_row             # feature row helper
+|  ├── gallery                 # image gallery helper
+|  ├── group-by-array          # group by array helper for archives
+|  ├── nav_list                # navigation list helper
+|  ├── toc                     # table of contents helper
+|  └── ...
+├── _layouts                   # 사이트 전반적인 레이아웃부터 부분적인 레이아웃을 설정
+|  ├── archive-taxonomy.html   # tag/category archive for Jekyll Archives plugin
+|  ├── archive.html            # archive base
+|  ├── categories.html         # archive listing posts grouped by category
+|  ├── category.html           # archive listing posts grouped by specific category
+|  ├── collection.html         # archive listing documents in a specific collection
+|  ├── compress.html           # compresses HTML in pure Liquid
+|  ├── default.html            # base for all other layouts
+|  ├── home.html               # home page
+|  ├── posts.html              # archive listing posts grouped by year
+|  ├── search.html             # search page
+|  ├── single.html             # single document (post/page/etc)
+|  ├── tag.html                # archive listing posts grouped by specific tag
+|  ├── tags.html               # archive listing posts grouped by tags
+|  └── splash.html             # splash page
+├── _sass                      # partial CSS 파일들 저장
+├── assets                     # 메인 CSS파일 및 JS, 이미지 파일 저장
+|  ├── css
+|  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
+|  ├── images                  # image assets for posts/pages/collections/etc.
+|  ├── js
+|  |  ├── plugins              # jQuery plugins
+|  |  ├── vendor               # vendor scripts
+|  |  ├── _main.js             # plugin settings and other scripts to load after jQuery
+|  |  └── main.min.js          # optimized and concatenated script file loaded before
+├── _config.yml                # site configuration
+├── Gemfile                    # gem file dependencies
+├── index.html                 # paginated home page showing recent posts
+└── package.json               # NPM build scripts
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;jekyll-environment&quot;&gt;jekyll environment&lt;/h1&gt;
+&lt;p&gt;테스트 서버 구동을 위한 jekyll 환경 설정&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler
+gem install jekyll
+
+bundle install
+
+# Run test server
+bundle exec jekyll serve --host 0.0.0.0 --port 80
+
+# See drafts (all files in /_draft/)
+bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="blogging" /><category term="jekyll" /><summary type="html">Intro 현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다. 지금 제가 사용하고 있는 thinkreen 블로그는 Github.io 와 jekyll을 기반으로 하고있고, minimal-mistake 테마를 사용하고 있습니다. 그리고 개발환경은 Git repository를 매번 clone한 후 Visual Studio Code를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.</summary></entry><entry><title type="html">Begin with TIL(Today I learned)</title><link href="http://0.0.0.0/til/TIL/" rel="alternate" type="text/html" title="Begin with TIL(Today I learned)" /><published>2020-07-10T00:00:00-05:00</published><updated>2020-07-10T09:00:00-05:00</updated><id>http://0.0.0.0/til/TIL</id><content type="html" xml:base="http://0.0.0.0/til/TIL/">&lt;p&gt;그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/TIL_Images/2020-07-10-TIL.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-did&quot;&gt;What I did&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;깃헙을 만든지 삼년이 지났지만, 깃헙을 제대로 활용하지 못하고 마땅한 포트폴리오도 없어서 &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;minimal-mistakes&lt;/a&gt; 템플렛을 적용한 &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; theme으로 github 블로그를 만들었다. 블로그를 만들려고 여러번 시도를 해보았지만, 막상 나의 성장과 정보 공유를 위해 뭔가를 만들어 본다는 것이 익숙하지 않았다. 최근에 미루고 미루던 machine learning을 공부하면서 알게된 markdown을 이용한 글쓰기가 상당이 재밌고 좋아서 TIL(Today I learned)를 꾸준히 이어가고 싶다.&lt;/li&gt;
+  &lt;li&gt;여러 템플렛으로 만들어 보았지만, 개인적으로 minimal-mistakes가 가장 가독성이 좋았고, 정리가 잘 되어있어서 처음 시작하기에 좋은 것 같다.&lt;/li&gt;
+  &lt;li&gt;기본적인 HTML/CSS/JavaScript를 알긴 하지만, 막상 그것들을 사용하여 페이지를 만들려고 하니 꽤나 힘들었다. 하지만 이번 기회에 Ruby를 포함해서 제대로 공부해봐야겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-i-learn&quot;&gt;What I learn&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;무언가 새로운 것을 시작할 때 완벽하게 공부하고 해야지 하면서 미루지 말고, 우선 작은 것 부터라도 시작을 하자.&lt;/li&gt;
+  &lt;li&gt;머릿속으로 아는 것과 실제로 만들어 보는 것에는 차이가 상당히 있다. 학습하는 시간과 실습하는 시간을 적절히 분배하자.&lt;/li&gt;
+  &lt;li&gt;영어가 모국어가 아니다 보니, 한국어로 먼저 기본 지식을 습득한 후에 영어로 깊게 파고 들어가자.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-to-do&quot;&gt;What to do&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data structure 공부 및 내용 정리/포스팅&lt;/li&gt;
+  &lt;li&gt;Machine learning 포트폴리오 정리&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>DAVID S. KIM</name></author><category term="TIL" /><summary type="html">그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/markdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/markdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/markdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
+&lt;p&gt;This is intended as a quick reference and showcase for Markdown.
+For more cheatsheet, check &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Adam-P Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;shortcuts&quot;&gt;Shortcuts&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;escape&lt;/code&gt; key: changes to command mode 
+&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;escape&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;: shortcut for “save”
+&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;escape&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;y&lt;/code&gt;: switch to code cell
+&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;escape&lt;/code&gt; then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;m&lt;/code&gt;: switch to Markdown cell
+&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shift + Enter&lt;/code&gt;: run code cells&lt;/p&gt;
+
+&lt;h2 id=&quot;headers&quot;&gt;Headers&lt;/h2&gt;
+&lt;p&gt;Put 1-6 hash marks(#) at the beginning of the line&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Header 1 
+## Header 2 
+### Header 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;renders as
+&lt;img src=&quot;/assets/images/headers.png&quot; alt=&quot;header&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;For bold, wrap the text in two asterisks or underscores (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**bold** or __bold__&lt;/code&gt;) renders as &lt;strong&gt;bold&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;For italics, wrap the text in one asterisk or underscore (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*italic* or _italic_&lt;/code&gt;) renders as &lt;em&gt;italic&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;For strikethrough, wrap the text in two tildes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~~strikethrough~~&lt;/code&gt;) renders as &lt;del&gt;strikethrough&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code-and-syntax-highlighting&quot;&gt;Code and Syntax Highlighting&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;code
+    &lt;ul&gt;
+      &lt;li&gt;start a new line and wrap the text in three backticks.&lt;/li&gt;
+      &lt;li&gt;indent each line of the code block with four spaces.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Syntax Highlighting
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; `sysntax highlighting` 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;renders as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sysntax highlighting&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;math-expressions&quot;&gt;Math expressions&lt;/h2&gt;
+
+&lt;p&gt;Create math expressions in Markdown cells using LaTeX symbols.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$y = mx + b$ renders as $y = mx + b$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;add-images&quot;&gt;Add images&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt Text](Url)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://avatars3.githubusercontent.com/u/14879156?s=460&amp;amp;u=30c6440b9fb8e96506494a80cb01b1c80039f83e&amp;amp;v=4&quot; alt=&quot;My profile&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;colors&quot;&gt;Colors:&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;font color=blue|red|green|pink|yellow&amp;gt;Text&amp;lt;/font&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Not all markdown code works within a font tag, so review your colored text carefully!&lt;/p&gt;
+
+&lt;h2 id=&quot;indented-quoting&quot;&gt;Indented quoting&lt;/h2&gt;
+&lt;p&gt;Use a greater than sign (&amp;gt;) and then a space, then type the text. The text is indented and has a gray horizontal line to the left of it until the next carriage return.&lt;/p&gt;
+
+&lt;h2 id=&quot;bullets&quot;&gt;Bullets&lt;/h2&gt;
+&lt;p&gt;Use the dash sign (- ) with a space after it, or a space, a dash, and a space ( - ), to create a circular bullet. To create a sub bullet, use a tab followed a dash and a space. You can also use an asterisk instead of a dash, and it works the same.&lt;/p&gt;
+
+&lt;h2 id=&quot;internal-links&quot;&gt;Internal links&lt;/h2&gt;
+&lt;p&gt;To link to a section, use this code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[section title](#section-title)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;For the text in the parentheses, replace spaces and special characters with a hyphen. Make sure to test all the links!
+Alternatively, you can add an ID for a section right above the section title. Use this code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;a id=&quot;section_ID&quot;&amp;gt;&amp;lt;/a&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Make sure that the section_ID is unique within the notebook.
+Use this code for the link and make sure to test all the links!&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[section title](#section_ID)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;external-links&quot;&gt;External links&lt;/h2&gt;
+&lt;p&gt;Use this code and test all links!&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[link text](http://url)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="jupyter notebook" /><category term="markdown" /><summary type="html">Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet</summary></entry><entry><title type="html">Web Crawling by Selenium</title><link href="http://0.0.0.0/machine%20learning/ml-webCrawling/" rel="alternate" type="text/html" title="Web Crawling by Selenium" /><published>2020-05-18T00:00:00-05:00</published><updated>2020-06-30T22:00:00-05:00</updated><id>http://0.0.0.0/machine%20learning/ml-webCrawling</id><content type="html" xml:base="http://0.0.0.0/machine%20learning/ml-webCrawling/">&lt;h1 id=&quot;google-image-download-using-selenium&quot;&gt;Google image download using Selenium&lt;/h1&gt;
+&lt;p&gt;머신 러닝 training을 위한 이미지 크롤링 라이브러리 &lt;a href=&quot;https://pypi.org/project/google_images_download/&quot;&gt;google_images_downloads&lt;/a&gt; 가 잘 실행되지 않아서 확인해 보았다.&lt;br /&gt;
+2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 &lt;a href=&quot;https://pypi.org/project/gids/&quot;&gt;gids&lt;/a&gt; 패키지를 이용하는 방법을 사용하였다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def get_soup(url,header):
+    return BeautifulSoup(urllib2.urlopen(urllib2.Request(url,headers=header)),'html.parser')    
+
+def main(args):
+    query = &quot;typical face&quot;
+    query = query.split()
+    query = '+'.join(query)
+    url = &quot;https://www.google.co.in/search?q=&quot;+query+&quot;&amp;amp;source=lnms&amp;amp;tbm=isch&quot;
+    headers = {}
+    headers['User-Agent'] = &quot;Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36&quot;
+    soup = get_soup(url, headers)
+    for a in soup.find_all(&quot;img&quot;, {&quot;class&quot;: &quot;rg_i&quot;}):
+        wget.download(a.attrs[&quot;data-iurl&quot;], a.attrs[&quot;data-iid&quot;])
+
+
+if __name__ == '__main__':
+    from sys import argv
+    try:
+        main(argv)
+    except KeyboardInterrupt:
+        pass
+    sys.exit()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;install-package&quot;&gt;Install Package&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install gids
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;usage&quot;&gt;Usage&lt;/h1&gt;
+&lt;h2 id=&quot;example-code&quot;&gt;Example code&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gids&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;builder&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'driver_path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/usr/local/bin/chromedriver'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'headless'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'window-size'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'720x480'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'disable_gpu'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;first_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'keyword'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'White Shark'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'limit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# The number of images
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;'download_context'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'./data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'animal'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# save in ./data/animal/img_01...10
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;second_item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'keyword'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Whale Shark'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'limit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# The number of images
+&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;'download_context'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'./data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Shark'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# save in ./data/plant/img_01...10
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;second_item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;downloader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;downloader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;result&quot;&gt;Result&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+    Loading Pages. This may take a few moments...
+    Page Scroll done...
+    Start to downloading
+    Downloading ...White Shark - [./data/animal/White Shark/img_0]
+    Downloading ...White Shark - [./data/animal/White Shark/img_1]
+    Downloading ...White Shark - [./data/animal/White Shark/img_2]
+    Downloading ...White Shark - [./data/animal/White Shark/img_3]
+    Downloading ...White Shark - [./data/animal/White Shark/img_4]
+    Downloading ...White Shark - [./data/animal/White Shark/img_5]
+    Downloading ...White Shark - [./data/animal/White Shark/img_6]
+    Downloading ...White Shark - [./data/animal/White Shark/img_7]
+    Downloading ...White Shark - [./data/animal/White Shark/img_8]
+    Downloading ...White Shark - [./data/animal/White Shark/img_9]
+    White Shark download completed. [Successful count = 10].
+    Loading Pages. This may take a few moments...
+    Page Scroll done...
+    Start to downloading
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_0]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_1]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_2]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_3]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_4]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_5]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_6]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_7]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_8]
+    Downloading ...Whale Shark - [./data/Shark/Whale Shark/img_9]
+    Whale Shark download completed. [Successful count = 10].
+    Total time is 36.451616048812866 seconds.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h1&gt;
+&lt;p&gt;아래와 같이 에러가 나올 때 chromedriver파일이 있는 디렉토리로 PATH를 설정해줌.&lt;/p&gt;
+
+&lt;p&gt;No found chromedriver in this environment.
+Install on your machine. exception: Message: ‘chromedriver’ executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/usr/local/bin/chromedriver
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry></feed>

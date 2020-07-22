@@ -1,0 +1,9 @@
+# main links links
+main:
+  - title: "About"
+    url: /_pages/about/
+  - title: "Posts"
+    url: /categories/
+  - title: "Portfolio"
+    url: /portfolio/
+ 

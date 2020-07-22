@@ -1,0 +1,747 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Blog 개발 환경 구축 - My porfolio blog</title>
+<meta name="description" content="Intro 현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다. 지금 제가 사용하고 있는 thinkreen 블로그는 Github.io 와 jekyll을 기반으로 하고있고, minimal-mistake 테마를 사용하고 있습니다. 그리고 개발환경은 Git repository를 매번 clone한 후 Visual Studio Code를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.">
+
+
+  <meta name="author" content="DAVID S. KIM">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My porfolio blog">
+<meta property="og:title" content="Blog 개발 환경 구축">
+<meta property="og:url" content="http://0.0.0.0/blogging/blogging-environment/">
+
+
+  <meta property="og:description" content="Intro 현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다. 지금 제가 사용하고 있는 thinkreen 블로그는 Github.io 와 jekyll을 기반으로 하고있고, minimal-mistake 테마를 사용하고 있습니다. 그리고 개발환경은 Git repository를 매번 clone한 후 Visual Studio Code를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.">
+
+
+
+  <meta property="og:image" content="http://0.0.0.0/assets/images/site-logo.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-07-19T00:00:00-05:00">
+
+
+
+  <meta property="article:modified_time" content="2020-07-18T22:00:00-05:00">
+
+
+
+  
+
+  
+    <meta property="fb:app_id" content="314948646216110">
+  
+
+
+<link rel="canonical" href="http://0.0.0.0/blogging/blogging-environment/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "DAVID S. KIM",
+      "url": "http://0.0.0.0/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My porfolio blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          My porfolio blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://0.0.0.0:80/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#blogging" itemprop="item"><span itemprop="name">Blogging</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Blog 개발 환경 구축</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.png" alt="DAVID S. KIM" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">DAVID S. KIM</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Happy Learning! 개발자 포트폴리오 및 공부 블로그입니다.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Austin, TX</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:thinkreen@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/thinkreendavid/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Blog 개발 환경 구축">
+    <meta itemprop="description" content="Intro현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.지금 제가 사용하고 있는 thinkreen 블로그는 Github.io 와 jekyll을 기반으로 하고있고, minimal-mistake 테마를 사용하고 있습니다.그리고 개발환경은 Git repository를 매번 clone한 후 Visual Studio Code를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.">
+    <meta itemprop="datePublished" content="2020-07-19T00:00:00-05:00">
+    <meta itemprop="dateModified" content="2020-07-18T22:00:00-05:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Blog 개발 환경 구축
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+         <!-- thinkreen comment: page.toc_ads 추가 -->
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              
+                <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+                <ul class="toc__menu">
+  <li><a href="#intro">Intro</a></li>
+  <li><a href="#posting-step">Posting step</a></li>
+  <li><a href="#structure">Structure</a></li>
+  <li><a href="#jekyll-environment">jekyll environment</a></li>
+</ul>
+
+              
+            </nav>
+            <!-- thinkreen comment : right-sidebar ads-->
+            <nav class="toc-custom">
+              
+                <script data-ad-client="ca-pub-3395551554460436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<!-- GoogleAdSenseSidbar -->
+<!--
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5216384132518164"
+     data-ad-slot="2594953841"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+-->
+              
+            </nav>
+          </aside>
+        
+        <h1 id="intro">Intro</h1>
+<p>현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
+지금 제가 사용하고 있는 thinkreen 블로그는 <code class="language-plaintext highlighter-rouge">Github.io</code> 와 <code class="language-plaintext highlighter-rouge">jekyll</code>을 기반으로 하고있고, <code class="language-plaintext highlighter-rouge">minimal-mistake</code> 테마를 사용하고 있습니다.
+그리고 개발환경은 Git repository를 매번 clone한 후 <code class="language-plaintext highlighter-rouge">Visual Studio Code</code>를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.</p>
+
+<h1 id="posting-step">Posting step</h1>
+<ol>
+  <li>write a draft.</li>
+  <li>Run on test server and check grammars/error.</li>
+  <li>Moving a file to <code class="language-plaintext highlighter-rouge">_posts</code> directory after posting.</li>
+  <li>Commit and push.</li>
+  <li>Check updated posting.</li>
+  <li>Keep updating if needed.</li>
+</ol>
+
+<h1 id="structure">Structure</h1>
+<p>아직은 <code class="language-plaintext highlighter-rouge">minimal-mistake</code> 테마의 구조와 일부 파일들을 그대로 가지고 있지만, 조금씩 수정을 통해 구조를 정리할 예정이고 현재 전반적인 블로구 구조입니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thinkreen.github.io
+├── _data                      # 커스텀 가능한 다양한 데이터 파일 존재 data files for customizing the theme
+|  ├── navigation.yml          # 네비게이션바, 사이드바 등이 정의 main navigation links
+|  └── ui-text.yml             # 언어별 표시되는 단어들의 정의 text used throughout the theme's UI
+├── _drafts                    # 블로그에 포스팅 되기 전 초안 밑 작업 파일들이 저장되는 곳
+├── _includes                  # includes를 사용하여 가져올 수 있는 파일들. (현재 하나씩 공부중)
+|  ├── analytics-providers     # snippets for analytics (Google and custom)
+|  ├── comments-providers      # snippets for comments
+|  ├── footer                  # custom snippets to add to site footer
+|  ├── head                    # custom snippets to add to site head
+|  ├── feature_row             # feature row helper
+|  ├── gallery                 # image gallery helper
+|  ├── group-by-array          # group by array helper for archives
+|  ├── nav_list                # navigation list helper
+|  ├── toc                     # table of contents helper
+|  └── ...
+├── _layouts                   # 사이트 전반적인 레이아웃부터 부분적인 레이아웃을 설정
+|  ├── archive-taxonomy.html   # tag/category archive for Jekyll Archives plugin
+|  ├── archive.html            # archive base
+|  ├── categories.html         # archive listing posts grouped by category
+|  ├── category.html           # archive listing posts grouped by specific category
+|  ├── collection.html         # archive listing documents in a specific collection
+|  ├── compress.html           # compresses HTML in pure Liquid
+|  ├── default.html            # base for all other layouts
+|  ├── home.html               # home page
+|  ├── posts.html              # archive listing posts grouped by year
+|  ├── search.html             # search page
+|  ├── single.html             # single document (post/page/etc)
+|  ├── tag.html                # archive listing posts grouped by specific tag
+|  ├── tags.html               # archive listing posts grouped by tags
+|  └── splash.html             # splash page
+├── _sass                      # partial CSS 파일들 저장
+├── assets                     # 메인 CSS파일 및 JS, 이미지 파일 저장
+|  ├── css
+|  |  └── main.scss            # main stylesheet, loads SCSS partials from _sass
+|  ├── images                  # image assets for posts/pages/collections/etc.
+|  ├── js
+|  |  ├── plugins              # jQuery plugins
+|  |  ├── vendor               # vendor scripts
+|  |  ├── _main.js             # plugin settings and other scripts to load after jQuery
+|  |  └── main.min.js          # optimized and concatenated script file loaded before
+├── _config.yml                # site configuration
+├── Gemfile                    # gem file dependencies
+├── index.html                 # paginated home page showing recent posts
+└── package.json               # NPM build scripts
+
+</code></pre></div></div>
+
+<h1 id="jekyll-environment">jekyll environment</h1>
+<p>테스트 서버 구동을 위한 jekyll 환경 설정</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+gem install jekyll
+
+bundle install
+
+# Run test server
+bundle exec jekyll serve --host 0.0.0.0 --port 80
+
+# See drafts (all files in /_draft/)
+bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
+</code></pre></div></div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#blogging" class="page__taxonomy-item" rel="tag">blogging</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">jekyll</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#blogging" class="page__taxonomy-item" rel="tag">blogging</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-19">July 19, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Blog+%EA%B0%9C%EB%B0%9C+%ED%99%98%EA%B2%BD+%EA%B5%AC%EC%B6%95%20http%3A%2F%2F0.0.0.0%2Fblogging%2Fblogging-environment%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%2Fblogging%2Fblogging-environment%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%2Fblogging%2Fblogging-environment%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/til/TIL/" class="pagination--pager" title="Begin with TIL(Today I learned)
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/til/TIL/" rel="permalink">Begin with TIL(Today I learned)
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/markdown/markdownCheatsheets/" rel="permalink">Markdown Cheatsheets
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Markdown Cheatsheet
+This is intended as a quick reference and showcase for Markdown.
+For more cheatsheet, check Adam-P Markdown Cheatsheet
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/machine%20learning/ml-webCrawling/" rel="permalink">Web Crawling by Selenium
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Google image download using Selenium
+머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다.
+2020년 2월부터 Google images DOM이 image eleme...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script data-ad-client="ca-pub-3395551554460436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/thinkreendavid/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 DAVID S. KIM. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+
+
+
+
+
+  </body>
+</html>
