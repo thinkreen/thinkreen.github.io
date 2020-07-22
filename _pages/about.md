@@ -17,7 +17,7 @@ Thank you so much.
 
 
 
-## ![work](/assets/images/work.png){:.image-color-dark } WORK EXPERIENCES 
+## WORK EXPERIENCES 
 Passionate manufacturing system engineer with 7+ years of progressive experiences in designing the mfg system architecture and automation robots. Especially, focused on developing and optimizing the automated dispatching scheduler system that predicts the factory inventory position and optimizes mfg schedule based on the enumerous mfg simulation data in the last 5 years. 
 
 ### Manufacturing System Engineer at Samsung Austin Semiconductor (2017-)
@@ -37,14 +37,13 @@ Developed new manufacturing automation and its process to improve performance an
 
 
 
-## ![school](/assets/images/school.png){:.image-color-dark } EDUCATION
-
+## EDUCATION
 ### BS in Mechanical Engineering<br>University at Buffalo, State University of New York (2013)
 Studied manufacturing and robotics.
 
 
 
-## ![interest](/assets/images/interest.png){:.image-color-dark } INTEREST
+## INTEREST
 - Machine Learning
 - Computer Vision and Sensor Fusion
 - Autonomous System, esp Self-driving car
@@ -53,7 +52,7 @@ Studied manufacturing and robotics.
 
 
 
-## ![todo](/assets/images/todo.png){:.image-color-dark } POSTING PLAN
+## POSTING PLAN
 - My project portfolios
 - Today I Learned (TIL)
 - Data structures and Algorithms
