@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Begin with TIL(Today I learned)",
-        "excerpt":"그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다. What I did 깃헙을 만든지 삼년이 지났지만, 깃헙을 제대로 활용하지 못하고 마땅한 포트폴리오도 없어서 minimal-mistakes 템플렛을 적용한 jekyll theme으로 github 블로그를 만들었다. 블로그를 만들려고 여러번 시도를 해보았지만, 막상 나의 성장과 정보 공유를 위해 뭔가를 만들어 본다는 것이 익숙하지 않았다. 최근에 미루고...","categories": ["TIL"],
+        "excerpt":"그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다. What I did 깃헙 계정을 만든지 삼년이 지났지만, 깃헙을 제대로 활용하지 못하고 마땅한 포트폴리오도 없어서 minimal-mistakes 템플렛을 적용한 jekyll theme으로 github 블로그를 만들었다. 블로그를 만들려고 여러번 시도를 해보았지만, 막상 나의 성장과 정보 공유를 위해 뭔가를 만들어 본다는 것이 익숙하지 않았다. 최근에...","categories": ["TIL"],
         "tags": ["TIL"],
         "url": "http://0.0.0.0/til/TIL/",
         "teaser": null
