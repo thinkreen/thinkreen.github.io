@@ -32,7 +32,7 @@ thinkreen.github.io
 ├── _data                      # 커스텀 가능한 다양한 데이터 파일 존재 data files for customizing the theme
 |  ├── navigation.yml          # 네비게이션바, 사이드바 등이 정의 main navigation links
 |  └── ui-text.yml             # 언어별 표시되는 단어들의 정의 text used throughout the theme's UI
-├── _drafts                    # 블로그에 포스팅 되기 전 초안 밑 작업 파일들이 저장되는 곳
+├── test                       # 블로그에 포스팅 되기 전 초안 밑 작업 파일들의 저장 및 테스트.
 ├── _includes                  # includes를 사용하여 가져올 수 있는 파일들. (현재 하나씩 공부중)
 |  ├── analytics-providers     # snippets for analytics (Google and custom)
 |  ├── comments-providers      # snippets for comments
@@ -89,6 +89,6 @@ bundle install
 # Run test server
 bundle exec jekyll serve --host 0.0.0.0 --port 80
 
-# See drafts (all files in /_draft/)
-bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
+# See drafts (all files in /test/)
+bundle exec jekyll serve --host 0.0.0.0 --port 80 --test
 ```
