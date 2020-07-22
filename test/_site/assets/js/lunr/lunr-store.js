@@ -11,6 +11,12 @@ var store = [{
         "url": "http://0.0.0.0/markdown/markdownCheatsheets/",
         "teaser": null
       },{
+        "title": "Python 라이브러리/패키지/모듈/함수/클래스",
+        "excerpt":"파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다. 라이브러리(Library) 라이브러리와 패키지는 둘다 다른 프로그램에서 포함하여 사용할 수 있는 일종의 코드 모음이라고 생각하면 쉽습니다. 여러 모듈과 패키지를 묶어 라이브러리라고 합니다. 파이썬을...","categories": ["python"],
+        "tags": ["python","library","package","module","function","class"],
+        "url": "http://0.0.0.0/python/py-FunctionModuleClass/",
+        "teaser": null
+      },{
         "title": "Begin with TIL(Today I learned)",
         "excerpt":"그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다. What I did 깃헙 계정을 만든지 삼년이 지났지만, 깃헙을 제대로 활용하지 못하고 마땅한 포트폴리오도 없어서 minimal-mistakes 템플렛을 적용한 jekyll theme으로 github 블로그를 만들었다. 블로그를 만들려고 여러번 시도를 해보았지만, 막상 나의 성장과 정보 공유를 위해 뭔가를 만들어 본다는 것이 익숙하지 않았다. 최근에...","categories": ["TIL"],
         "tags": ["TIL"],
