@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-22T23:19:10-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-23T01:50:45-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 &lt;p&gt;현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
 지금 제가 사용하고 있는 thinkreen 블로그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github.io&lt;/code&gt; 와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;을 기반으로 하고있고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minimal-mistake&lt;/code&gt; 테마를 사용하고 있습니다.
 그리고 개발환경은 Git repository를 매번 clone한 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt;를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.&lt;/p&gt;
@@ -206,7 +206,7 @@ game/
     &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
     &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/markdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/markdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/markdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/MarkdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/MarkdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/MarkdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
 &lt;p&gt;This is intended as a quick reference and showcase for Markdown.
 For more cheatsheet, check &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Adam-P Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
 
@@ -294,7 +294,7 @@ Use this code for the link and make sure to test all the links!&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="jupyter notebook" /><category term="markdown" /><summary type="html">Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet</summary></entry><entry><title type="html">Web Crawling by Selenium</title><link href="http://0.0.0.0/machine%20learning/ml-webCrawling/" rel="alternate" type="text/html" title="Web Crawling by Selenium" /><published>2020-05-18T00:00:00-05:00</published><updated>2020-06-30T22:00:00-05:00</updated><id>http://0.0.0.0/machine%20learning/ml-webCrawling</id><content type="html" xml:base="http://0.0.0.0/machine%20learning/ml-webCrawling/">&lt;h1 id=&quot;google-image-download-using-selenium&quot;&gt;Google image download using Selenium&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="jupyter notebook" /><category term="markdown" /><summary type="html">Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet</summary></entry><entry><title type="html">Web Crawling by Selenium</title><link href="http://0.0.0.0/machine%20learning/ml-WebCrawling/" rel="alternate" type="text/html" title="Web Crawling by Selenium" /><published>2020-05-18T00:00:00-05:00</published><updated>2020-06-30T22:00:00-05:00</updated><id>http://0.0.0.0/machine%20learning/ml-WebCrawling</id><content type="html" xml:base="http://0.0.0.0/machine%20learning/ml-WebCrawling/">&lt;h1 id=&quot;google-image-download-using-selenium&quot;&gt;Google image download using Selenium&lt;/h1&gt;
 &lt;p&gt;머신 러닝 training을 위한 이미지 크롤링 라이브러리 &lt;a href=&quot;https://pypi.org/project/google_images_download/&quot;&gt;google_images_downloads&lt;/a&gt; 가 잘 실행되지 않아서 확인해 보았다.&lt;br /&gt;
 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 &lt;a href=&quot;https://pypi.org/project/gids/&quot;&gt;gids&lt;/a&gt; 패키지를 이용하는 방법을 사용하였다.&lt;/p&gt;
 
@@ -397,8 +397,92 @@ if __name__ == '__main__':
 Install on your machine. exception: Message: ‘chromedriver’ executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/usr/local/bin/chromedriver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry><entry><title type="html">Python 1. 시작하기</title><link href="http://0.0.0.0/python/py-IntroToPython/" rel="alternate" type="text/html" title="Python 1. 시작하기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-IntroToPython</id><content type="html" xml:base="http://0.0.0.0/python/py-IntroToPython/">&lt;p&gt;2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다.
-파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry><entry><title type="html">Python 3. 자료형</title><link href="http://0.0.0.0/python/py-03-DataType/" rel="alternate" type="text/html" title="Python 3. 자료형" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-03-DataType</id><content type="html" xml:base="http://0.0.0.0/python/py-03-DataType/">&lt;h1 id=&quot;자료형data-type&quot;&gt;자료형(data type)&lt;/h1&gt;
+&lt;p&gt;자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type()&lt;/code&gt; 함수를 사용한다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;안녕하세요&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; print(type(273))
+&amp;lt;class '&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;References:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
+    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="자료형" /><category term="data types" /><summary type="html">자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &amp;gt;&amp;gt;&amp;gt; print(type(&quot;안녕하세요&quot;)) &amp;lt;class 'str'&amp;gt; &amp;gt;&amp;gt;&amp;gt; print(type(273)) &amp;lt;class 'int'&amp;gt;</summary></entry><entry><title type="html">Python 2. 기본기</title><link href="http://0.0.0.0/python/py-02-BasicElements/" rel="alternate" type="text/html" title="Python 2. 기본기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-02-BasicElements</id><content type="html" xml:base="http://0.0.0.0/python/py-02-BasicElements/">&lt;p&gt;미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;표현식expressions과-문장statements-혹은-commands&quot;&gt;표현식(Expressions)과 문장(Statements 혹은 commands)&lt;/h1&gt;
+&lt;p&gt;파이썬에서 어떠한 값(숫자, 수식, 문자열 등)을 만들어 내는 간단한 코드를 표현식(expressions)이라고 부릅니다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;273&lt;/span&gt;                   &lt;span class=&quot;c1&quot;&gt;# expression
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;# expression
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello python&quot;&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# expression
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;                     &lt;span class=&quot;c1&quot;&gt;# not an expression. + 그것 자체만으로 어떠한 값도 만들어 낼 수 없기 때문에 표현식이 아님.
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#statement
+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;키워드keyworkds&quot;&gt;키워드(Keyworkds)&lt;/h1&gt;
+&lt;p&gt;특별한 의미가 부여된 단어로, 파이썬이 만들어질 때 이미 사용하겠다고 약속한 단어를 말하며, 파이썬은 대소문자를 구분하는 프로그래밍 언어이기 때문에 대소문자에 따라서 키워드가 될 수 도 있고 안될 수도 있습니다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# keyword
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;true&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# keyword가 아님.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;만약 사용하고자 하는 단어가 키워드인지 아닌지 확인하고 싶은 경우 아래의 코드로 키워드를 확인할 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keyword&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keyword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwlist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'False'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'None'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'True'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'and'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'as'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'assert'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'async'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'await'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'break'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'class'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'continue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'def'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'del'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'elif'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'else'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'except'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'finally'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'for'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'from'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'global'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'if'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'import'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'in'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'is'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'lambda'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'nonlocal'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'not'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'or'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'pass'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'raise'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'return'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'try'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'while'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'with'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'yield'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;식별자identifiers&quot;&gt;식별자(identifiers)&lt;/h1&gt;
+&lt;p&gt;변수(variables) 또는 함수의 이름을 명칭합니다. 코드가 길어지거나 다른 사람이 식별자의 이름만으로도 대충 무엇을 의미하는지 알 수 있도록 의미 있는 단어를 사용하는 것이 좋습니다. 그리고 식별자에는 공백을 사용할 수 없기 때문에, 둘 이상의 단어로 조합이 된 경우 &lt;strong&gt;snake_case&lt;/strong&gt;나 &lt;strong&gt;CamelCase&lt;/strong&gt;를 사용한다. 아래의 규칙을 지키지 않는다고 해서 프로그램 작성에 문제가 되는 것은 아니지만, 파이썬 개발자들이 지켜서 사용하는 규칙이고 식별자만 보았을 때 무엇을 하는 것인지 한번에 이해할 수 있습니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;키워드를 사용하면 안됨.&lt;/li&gt;
+  &lt;li&gt;특수 문자는 _만 허용.&lt;/li&gt;
+  &lt;li&gt;숫자로 시작하면 안됨.&lt;/li&gt;
+  &lt;li&gt;공백을 포함할 수 없음.&lt;/li&gt;
+  &lt;li&gt;CamelCase는 두 이름 사이를 대문자로 연결되어 있고, 주로 클래스이름에 사용됨.&lt;/li&gt;
+  &lt;li&gt;snake_case는 두 이름 사이를 _으로 연결되어 있고, 주로 함수(이름 뒤에 ()가 있음) 또는 변수에서 사용됨.&lt;/li&gt;
+  &lt;li&gt;파이썬에서는 둘다 사용이 가능하지만, 첫 번째 글자가 소문자라면 무조건 snake_case를, 대문자라면 CamelCase를 사용한다.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# snake_case이고 함수
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;# snake_case이고 함수
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# snake_case이고 변수
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# CamelCase이고 클래스
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# CamelCase이고 클래스. 클래스 생성자라고 부르는 특이한 형태의 함수임.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;주석comments&quot;&gt;주석(Comments)&lt;/h1&gt;
+&lt;p&gt;프로그램의 진행에 영향을 주지 않는 코드로, 프로그램을 설명하기 위해 사용됩니다. 주석 처리를 하고자 하는 부분 앞에 # 기호를 붙여서 주석 처리합니다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 이름을 출력하는 예입니다.
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, David!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# 문자열을 출력합니다.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;David&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;
+
+&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;&quot;
+여러줄 주석은
+이렇게 
+작성합니다.
+&quot;&quot;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;References:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
+    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본 용어" /><summary type="html">미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.</summary></entry><entry><title type="html">Python 1. 시작하기</title><link href="http://0.0.0.0/python/py-01-Intro/" rel="alternate" type="text/html" title="Python 1. 시작하기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-01-Intro</id><content type="html" xml:base="http://0.0.0.0/python/py-01-Intro/">&lt;p&gt;2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다.
+파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다. 
+&lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;파이썬-설치&quot;&gt;파이썬 설치&lt;/h1&gt;
 &lt;h2 id=&quot;os-x&quot;&gt;OS X&lt;/h2&gt;
@@ -412,6 +496,7 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
   Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
   &amp;gt;&amp;gt;&amp;gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -419,13 +504,9 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
 &lt;ul&gt;
   &lt;li&gt;python 3.X 사용을 위해서는 파이썬 공식 홈페이지 &lt;a href=&quot;https://www.python.org&quot;&gt;python&lt;/a&gt;에 접속하여 다운로드.&lt;/li&gt;
   &lt;li&gt;설치할 때 반드시 [Add Python 3.X to PATH]를 체크 후 설치해야 명령 프롬프트에서 [python]이라고 입력해서 파이썬을 실행할 수 있음.&lt;/li&gt;
-  &lt;li&gt;윈도우키 + R을 눌러 실행 창에 powershell이라고 치고, 화면에 python이라고 입력 후 오류가 있는지 확인. 오류가 없으면 설치 성공, 아니면 다시 설치.&lt;/li&gt;
+  &lt;li&gt;윈도우키 + R을 눌러 실행 창에 powershell이라고 치고, 화면에 python이라고 입력 후 오류가 있는지 확인. 오류가 없으면 설치 성공, 아니면 다시 설치.
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;References:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
-    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본용어" /><summary type="html">2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다. 파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.</summary></entry></feed>
+&lt;h1 id=&quot;파이썬-실행&quot;&gt;파이썬 실행&lt;/h1&gt;
+&lt;p&gt;파이썬 설치시 함께 따라오는 IDLE(Integrated Development and Learning Environment)가 있지만, 개인적으로 &lt;a href=&quot;https://code.visualstudio.com&quot;&gt;Visual Studio Code&lt;/a&gt;를 사용하는 것을 선호한다. 그리고 편리한 외부 패키지나 라이브러리 설치 및 환경 변수 관리를 위해 &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;Anaconda&lt;/a&gt;를 사용한다.&lt;/p&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><summary type="html">2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다. 파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.</summary></entry></feed>

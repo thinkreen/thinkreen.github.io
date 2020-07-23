@@ -1,20 +1,32 @@
 var store = [{
         "title": "Python 1. 시작하기",
         "excerpt":"2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다. 파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이...","categories": ["python"],
-        "tags": ["python","파이썬","기본용어"],
-        "url": "http://0.0.0.0/python/py-IntroToPython/",
+        "tags": ["python","파이썬"],
+        "url": "http://0.0.0.0/python/py-01-Intro/",
+        "teaser": null
+      },{
+        "title": "Python 2. 기본기",
+        "excerpt":"미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다. 표현식(Expressions)과 문장(Statements 혹은 commands) 파이썬에서 어떠한 값(숫자, 수식, 문자열 등)을 만들어 내는...","categories": ["python"],
+        "tags": ["python","파이썬","기본 용어"],
+        "url": "http://0.0.0.0/python/py-02-BasicElements/",
+        "teaser": null
+      },{
+        "title": "Python 3. 자료형",
+        "excerpt":"자료형(data type)  자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다.  &gt;&gt;&gt; print(type(\"안녕하세요\")) &lt;class 'str'&gt; &gt;&gt;&gt; print(type(273)) &lt;class 'int'&gt;      References:         Introduction to Computation and Programming Using Python (John Guttag / MIT)     혼자 공부하는 파이썬 (윤인성 / 한빛미디어)     ","categories": ["python"],
+        "tags": ["python","파이썬","자료형","data types"],
+        "url": "http://0.0.0.0/python/py-03-DataType/",
         "teaser": null
       },{
         "title": "Web Crawling by Selenium",
         "excerpt":"Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다. def get_soup(url,header):...","categories": ["machine learning"],
         "tags": ["machine learning","python","crawling"],
-        "url": "http://0.0.0.0/machine%20learning/ml-webCrawling/",
+        "url": "http://0.0.0.0/machine%20learning/ml-WebCrawling/",
         "teaser": null
       },{
         "title": "Markdown Cheatsheets",
         "excerpt":"Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet Shortcuts escape key: changes to command mode escape then s: shortcut for “save” escape then y: switch to code cell escape then m: switch to Markdown cell Shift + Enter:...","categories": ["markdown"],
         "tags": ["jupyter notebook","markdown"],
-        "url": "http://0.0.0.0/markdown/markdownCheatsheets/",
+        "url": "http://0.0.0.0/markdown/MarkdownCheatsheets/",
         "teaser": null
       },{
         "title": "Python 라이브러리/패키지/모듈/함수/클래스",

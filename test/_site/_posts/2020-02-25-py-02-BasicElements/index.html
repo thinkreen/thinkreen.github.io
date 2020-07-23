@@ -1,0 +1,307 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Python 2. 기본기 - My porfolio blog</title>
+<meta name="description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
+
+
+  <meta name="author" content="DAVID S. KIM">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My porfolio blog">
+<meta property="og:title" content="Python 2. 기본기">
+<meta property="og:url" content="http://0.0.0.0/_posts/2020-02-25-py-02-BasicElements/">
+
+
+  <meta property="og:description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
+
+
+
+  <meta property="og:image" content="http://0.0.0.0/assets/images/site-logo.png">
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <meta property="fb:app_id" content="314948646216110">
+  
+
+
+<link rel="canonical" href="http://0.0.0.0/_posts/2020-02-25-py-02-BasicElements/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "DAVID S. KIM",
+      "url": "http://0.0.0.0/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My porfolio blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          My porfolio blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <p>미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.
+<br /></p>
+
+<h1 id="표현식expressions과-문장statements-혹은-commands">표현식(Expressions)과 문장(Statements 혹은 commands)</h1>
+<p>파이썬에서 어떠한 값(숫자, 수식, 문자열 등)을 만들어 내는 간단한 코드를 표현식(expressions)이라고 부릅니다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">273</span>                   <span class="c1"># expression
+</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">*</span> <span class="mi">30</span>          <span class="c1"># expression
+</span><span class="s">"Hello python"</span>        <span class="c1"># expression
+</span><span class="o">+</span>                     <span class="c1"># not an expression. + 그것 자체만으로 어떠한 값도 만들어 낼 수 없기 때문에 표현식이 아님.
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hello python"</span><span class="p">)</span> <span class="c1">#statement
+</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<h1 id="키워드keyworkds">키워드(Keyworkds)</h1>
+<p>특별한 의미가 부여된 단어로, 파이썬이 만들어질 때 이미 사용하겠다고 약속한 단어를 말하며, 파이썬은 대소문자를 구분하는 프로그래밍 언어이기 때문에 대소문자에 따라서 키워드가 될 수 도 있고 안될 수도 있습니다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">True</span>        <span class="c1"># keyword
+</span><span class="n">true</span>        <span class="c1"># keyword가 아님.
+</span></code></pre></div></div>
+
+<p>만약 사용하고자 하는 단어가 키워드인지 아닌지 확인하고 싶은 경우 아래의 코드로 키워드를 확인할 수 있습니다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">keyword</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">keyword</span><span class="p">.</span><span class="n">kwlist</span><span class="p">)</span>
+<span class="p">[</span><span class="s">'False'</span><span class="p">,</span> <span class="s">'None'</span><span class="p">,</span> <span class="s">'True'</span><span class="p">,</span> <span class="s">'and'</span><span class="p">,</span> <span class="s">'as'</span><span class="p">,</span> <span class="s">'assert'</span><span class="p">,</span> <span class="s">'async'</span><span class="p">,</span> <span class="s">'await'</span><span class="p">,</span> <span class="s">'break'</span><span class="p">,</span> <span class="s">'class'</span><span class="p">,</span> <span class="s">'continue'</span><span class="p">,</span> <span class="s">'def'</span><span class="p">,</span> <span class="s">'del'</span><span class="p">,</span> <span class="s">'elif'</span><span class="p">,</span> <span class="s">'else'</span><span class="p">,</span> <span class="s">'except'</span><span class="p">,</span> <span class="s">'finally'</span><span class="p">,</span> <span class="s">'for'</span><span class="p">,</span> <span class="s">'from'</span><span class="p">,</span> <span class="s">'global'</span><span class="p">,</span> <span class="s">'if'</span><span class="p">,</span> <span class="s">'import'</span><span class="p">,</span> <span class="s">'in'</span><span class="p">,</span> <span class="s">'is'</span><span class="p">,</span> <span class="s">'lambda'</span><span class="p">,</span> <span class="s">'nonlocal'</span><span class="p">,</span> <span class="s">'not'</span><span class="p">,</span> <span class="s">'or'</span><span class="p">,</span> <span class="s">'pass'</span><span class="p">,</span> <span class="s">'raise'</span><span class="p">,</span> <span class="s">'return'</span><span class="p">,</span> <span class="s">'try'</span><span class="p">,</span> <span class="s">'while'</span><span class="p">,</span> <span class="s">'with'</span><span class="p">,</span> <span class="s">'yield'</span><span class="p">]</span> 
+</code></pre></div></div>
+<p><br /></p>
+
+<h1 id="식별자identifiers">식별자(identifiers)</h1>
+<p>변수(variables) 또는 함수의 이름을 명칭합니다. 코드가 길어지거나 다른 사람이 식별자의 이름만으로도 대충 무엇을 의미하는지 알 수 있도록 의미 있는 단어를 사용하는 것이 좋습니다. 그리고 식별자에는 공백을 사용할 수 없기 때문에, 둘 이상의 단어로 조합이 된 경우 <strong>snake_case</strong>나 <strong>CamelCase</strong>를 사용한다. 아래의 규칙을 지키지 않는다고 해서 프로그램 작성에 문제가 되는 것은 아니지만, 파이썬 개발자들이 지켜서 사용하는 규칙이고 식별자만 보았을 때 무엇을 하는 것인지 한번에 이해할 수 있습니다.</p>
+<ul>
+  <li>키워드를 사용하면 안됨.</li>
+  <li>특수 문자는 _만 허용.</li>
+  <li>숫자로 시작하면 안됨.</li>
+  <li>공백을 포함할 수 없음.</li>
+  <li>CamelCase는 두 이름 사이를 대문자로 연결되어 있고, 주로 클래스이름에 사용됨.</li>
+  <li>snake_case는 두 이름 사이를 _으로 연결되어 있고, 주로 함수(이름 뒤에 ()가 있음) 또는 변수에서 사용됨.</li>
+  <li>파이썬에서는 둘다 사용이 가능하지만, 첫 번째 글자가 소문자라면 무조건 snake_case를, 대문자라면 CamelCase를 사용한다.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">()</span>         <span class="c1"># snake_case이고 함수
+</span><span class="nb">list</span><span class="p">()</span>          <span class="c1"># snake_case이고 함수
+</span><span class="n">math</span><span class="p">.</span><span class="n">pi</span>         <span class="c1"># snake_case이고 변수
+</span><span class="k">class</span> <span class="nc">Animal</span>    <span class="c1"># CamelCase이고 클래스
+</span><span class="n">BeautifulSoup</span><span class="p">()</span> <span class="c1"># CamelCase이고 클래스. 클래스 생성자라고 부르는 특이한 형태의 함수임.
+</span></code></pre></div>    </div>
+    <p><br /></p>
+  </li>
+</ul>
+
+<h1 id="주석comments">주석(Comments)</h1>
+<p>프로그램의 진행에 영향을 주지 않는 코드로, 프로그램을 설명하기 위해 사용됩니다. 주석 처리를 하고자 하는 부분 앞에 # 기호를 붙여서 주석 처리합니다.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="o">&gt;&gt;&gt;</span> <span class="c1"># 이름을 출력하는 예입니다.
+</span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s">"Hello, David!"</span><span class="p">)</span>   <span class="c1"># 문자열을 출력합니다.
+</span><span class="n">Hello</span><span class="p">,</span> <span class="n">David</span><span class="err">!</span>
+
+<span class="s">""""
+여러줄 주석은
+이렇게 
+작성합니다.
+"""</span>
+</code></pre></div></div>
+<p><br /></p>
+
+<blockquote>
+  <p>References:</p>
+  <ul>
+    <li>Introduction to Computation and Programming Using Python (John Guttag / MIT)</li>
+    <li>혼자 공부하는 파이썬 (윤인성 / 한빛미디어)</li>
+  </ul>
+</blockquote>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script data-ad-client="ca-pub-3395551554460436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/thinkreendavid/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 DAVID S. KIM. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
