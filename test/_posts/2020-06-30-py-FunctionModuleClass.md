@@ -4,6 +4,7 @@ categories:
     - "python"
 tags:
     - "python"
+    - "파이썬"
     - "library"
     - "package"
     - "module"        
@@ -93,3 +94,7 @@ python을 포함한 Java, Javascript, C#, C++, C등 제가 다룰 줄 아는 언
 
 위에서 간략하게 설명드린 라이브러리, 패키지, 모듈, 함수, 클래스에 대하여 다음 포스팅에서 조금 더 깊게 설명하겠습니다.
  
+
+> References:
+- Introduction to Computation and Programming Using Python (John Guttag / MIT)
+- 혼자 공부하는 파이썬 (윤인성 / 한빛미디어)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-22T04:26:23-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-22T23:19:10-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 &lt;p&gt;현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
 지금 제가 사용하고 있는 thinkreen 블로그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github.io&lt;/code&gt; 와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;을 기반으로 하고있고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minimal-mistake&lt;/code&gt; 테마를 사용하고 있습니다.
 그리고 개발환경은 Git repository를 매번 clone한 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt;를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.&lt;/p&gt;
@@ -99,7 +99,26 @@ bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
 &lt;ul&gt;
   &lt;li&gt;Data structure 공부 및 내용 정리/포스팅&lt;/li&gt;
   &lt;li&gt;Machine learning 포트폴리오 정리&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>DAVID S. KIM</name></author><category term="TIL" /><summary type="html">그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다.</summary></entry><entry><title type="html">Python 라이브러리/패키지/모듈/함수/클래스</title><link href="http://0.0.0.0/python/py-FunctionModuleClass/" rel="alternate" type="text/html" title="Python 라이브러리/패키지/모듈/함수/클래스" /><published>2020-06-30T00:00:00-05:00</published><updated>2020-06-30T09:00:00-05:00</updated><id>http://0.0.0.0/python/py-FunctionModuleClass</id><content type="html" xml:base="http://0.0.0.0/python/py-FunctionModuleClass/">&lt;p&gt;파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>DAVID S. KIM</name></author><category term="TIL" /><summary type="html">그날의 컨디션에 따라서 영어든 한국어든 TIL을 업데이트 할 예정이다.</summary></entry><entry><title type="html">Python 함수</title><link href="http://0.0.0.0/python/py-function/" rel="alternate" type="text/html" title="Python 함수" /><published>2020-07-01T00:00:00-05:00</published><updated>2020-07-01T09:00:00-05:00</updated><id>http://0.0.0.0/python/py-function</id><content type="html" xml:base="http://0.0.0.0/python/py-function/">&lt;h1 id=&quot;함수function&quot;&gt;함수(Function)&lt;/h1&gt;
+&lt;p&gt;함수는 하나의 기능성을 가진 코드의 집합을 말합니다. 그리고 함수를 사용하는 것을 보통 &lt;strong&gt;함수를 호출한다&lt;/strong&gt;라고 표현합니다. 함수를 호출할 때 괄호( ) 내부에 &lt;strong&gt;매개변수(parameter)&lt;/strong&gt;라는 자료를 넣어 최종적으로 &lt;strong&gt;리턴값&lt;/strong&gt;이라는 결과를 부릅니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;함수의-기본-형태&quot;&gt;함수의 기본 형태&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def 함수 이름(매개변수1, 매개변수2, ...):
+    문장
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;References:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
+    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="function" /><summary type="html">함수(Function) 함수는 하나의 기능성을 가진 코드의 집합을 말합니다. 그리고 함수를 사용하는 것을 보통 함수를 호출한다라고 표현합니다. 함수를 호출할 때 괄호( ) 내부에 매개변수(parameter)라는 자료를 넣어 최종적으로 리턴값이라는 결과를 부릅니다.</summary></entry><entry><title type="html">Python 라이브러리/패키지/모듈/함수/클래스</title><link href="http://0.0.0.0/python/py-FunctionModuleClass/" rel="alternate" type="text/html" title="Python 라이브러리/패키지/모듈/함수/클래스" /><published>2020-06-30T00:00:00-05:00</published><updated>2020-06-30T09:00:00-05:00</updated><id>http://0.0.0.0/python/py-FunctionModuleClass</id><content type="html" xml:base="http://0.0.0.0/python/py-FunctionModuleClass/">&lt;p&gt;파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/FunctionModuleClass.png&quot; alt=&quot;FunctionModuleClass&quot; /&gt;&lt;/p&gt;
 
@@ -179,7 +198,15 @@ game/
   &lt;li&gt;클래스는 객체를 위한 설계도이고, 이러한 클래스를 기반으로 만들어진 객체를 인스턴스라고 합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;위에서 간략하게 설명드린 라이브러리, 패키지, 모듈, 함수, 클래스에 대하여 다음 포스팅에서 조금 더 깊게 설명하겠습니다.&lt;/p&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/markdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/markdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/markdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
+&lt;p&gt;위에서 간략하게 설명드린 라이브러리, 패키지, 모듈, 함수, 클래스에 대하여 다음 포스팅에서 조금 더 깊게 설명하겠습니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;References:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
+    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/markdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/markdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/markdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
 &lt;p&gt;This is intended as a quick reference and showcase for Markdown.
 For more cheatsheet, check &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Adam-P Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
 
@@ -370,4 +397,35 @@ if __name__ == '__main__':
 Install on your machine. exception: Message: ‘chromedriver’ executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/usr/local/bin/chromedriver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry><entry><title type="html">Python 1. 시작하기</title><link href="http://0.0.0.0/python/py-IntroToPython/" rel="alternate" type="text/html" title="Python 1. 시작하기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-IntroToPython</id><content type="html" xml:base="http://0.0.0.0/python/py-IntroToPython/">&lt;p&gt;2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다.
+파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.&lt;/p&gt;
+
+&lt;h1 id=&quot;파이썬-설치&quot;&gt;파이썬 설치&lt;/h1&gt;
+&lt;h2 id=&quot;os-x&quot;&gt;OS X&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;보통 python 2.X 버전은 맥에 설치되어 있음.&lt;/li&gt;
+  &lt;li&gt;python 3.X 사용을 위해서는 파이썬 공식 홈페이지 &lt;a href=&quot;https://www.python.org&quot;&gt;python&lt;/a&gt;에 접속하여 다운로드.&lt;/li&gt;
+  &lt;li&gt;설치 후, terminal에서 python3라고 입력해서 아래와 같은 글이 뜨면 성공.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  (base) sunwookkim@MacBook-Pro ~ % python3
+  Python 3.7.6 (default, Jan  8 2020, 13:42:34) 
+  [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+  Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+  &amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;python 3.X 사용을 위해서는 파이썬 공식 홈페이지 &lt;a href=&quot;https://www.python.org&quot;&gt;python&lt;/a&gt;에 접속하여 다운로드.&lt;/li&gt;
+  &lt;li&gt;설치할 때 반드시 [Add Python 3.X to PATH]를 체크 후 설치해야 명령 프롬프트에서 [python]이라고 입력해서 파이썬을 실행할 수 있음.&lt;/li&gt;
+  &lt;li&gt;윈도우키 + R을 눌러 실행 창에 powershell이라고 치고, 화면에 python이라고 입력 후 오류가 있는지 확인. 오류가 없으면 설치 성공, 아니면 다시 설치.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;References:&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
+    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본용어" /><summary type="html">2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다. 파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.</summary></entry></feed>
