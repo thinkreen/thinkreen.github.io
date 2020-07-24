@@ -44,13 +44,12 @@ Studied manufacturing and robotics.
 
 
 ![interest](/assets/images/interest.png){:.image-color-dark }
-## INTEREST
-- Machine Learning
-- Computer Vision and Sensor Fusion
-- Autonomous System, esp Self-driving car
-- Data Analysis
-- Baking and Cooking
+## INTERESTs
+- Machine Learning, Computer Vision, SLAM, localization, Sensor Fusion, Data Analysis
 
+
+## Language
+- Python, C, C++, Matlab Java, HTML/CSS
 
 ![todo](/assets/images/todo.png){:.image-color-dark }
 ## POSTING PLAN
