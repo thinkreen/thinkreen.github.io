@@ -6,7 +6,7 @@
    Typography
    ========================================================================== */
 
-   $doc-font-size: 14 !default; // default: 16. 수정함
+   $doc-font-size: 16 !default; // default: 16. 수정함
 
    /* paragraph indention */
    $paragraph-indent: false !default; // true, false (default)
@@ -34,9 +34,9 @@
    $caption-font-family: $serif !default;
    
    /* type scale */
-   $type-size-1: 2.1875em !default; // ~35px orig. 2.441em
-   $type-size-2: 1.875em !default; // ~30px orig.1.953em
-   $type-size-3: 1.5em !default; // ~24px orig. 1.563em
+   $type-size-1: 2.441em !default; // ~35px orig. 2.441em
+   $type-size-2: 1.953em !default; // ~30px orig.1.953em
+   $type-size-3: 1.563em !default; // ~24px orig. 1.563em
    $type-size-4: 1.25em !default; // ~20px
    $type-size-5: 1em !default; // ~16px
    $type-size-6: 0.75em !default; // ~12px
@@ -44,7 +44,7 @@
    $type-size-8: 0.625em !default; // ~10px
    
    /* headline scale */
-   $h-size-1: 1.5em !default; // ~24px orig. 1.563em
+   $h-size-1: 1.563em!default; // ~24px orig. 1.563em
    $h-size-2: 1.25em !default; // ~20px
    $h-size-3: 1.125em !default; // ~18px
    $h-size-4: 1.0625em !default; // ~17px
