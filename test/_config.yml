@@ -279,7 +279,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
       comments: true
       share: true
       related: true
@@ -305,3 +304,6 @@ defaults:
       author_profile: true
       comments: true
       share: true
+      toc: true
+      toc_ads: true # 구글 애드센스 추가
+      toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
