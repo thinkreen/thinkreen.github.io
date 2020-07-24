@@ -285,6 +285,7 @@ defaults:
       toc: true
       toc_ads: true # 구글 애드센스 추가
       toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
+      last_modified_at: true # 최근 업뎃 날짜 추가
   # _pages 
   - scope:
       path: "_pages"
