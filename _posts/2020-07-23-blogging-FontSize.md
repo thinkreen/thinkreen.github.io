@@ -1,9 +1,10 @@
 ---
-title: "minimal mistakes font 사이즈 변경"
+title: "minimal-mistakes font 사이즈 변경"
 categories: 
     - "blogging"
 tags:
     - "blogging"
+    - "minimal-mistakes"
     - "jekyll"
     - "폰트 사이즈"
     - "font size"
