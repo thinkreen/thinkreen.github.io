@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Python 3. 자료형",
-        "excerpt":"자료형(data type)  자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다.  &gt;&gt;&gt; print(type(\"안녕하세요\")) &lt;class 'str'&gt; &gt;&gt;&gt; print(type(273)) &lt;class 'int'&gt;      References:         Introduction to Computation and Programming Using Python (John Guttag / MIT)     혼자 공부하는 파이썬 (윤인성 / 한빛미디어)     ","categories": ["python"],
+        "excerpt":"자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &gt;&gt;&gt; print(type(\"안녕하세요\")) &lt;class 'str'&gt; # 문자열 &gt;&gt;&gt; print(type(273)) &lt;class 'int'&gt; # 정수 문자열 만들기 References: Introduction to Computation and Programming Using Python (John Guttag / MIT) 혼자 공부하는 파이썬 (윤인성 / 한빛미디어)...","categories": ["python"],
         "tags": ["python","파이썬","자료형","data types"],
         "url": "http://0.0.0.0/python/py-03-DataType/",
         "teaser": null
@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Python 함수",
-        "excerpt":"함수(Function) 함수는 하나의 기능성을 가진 코드의 집합을 말합니다. 그리고 함수를 사용하는 것을 보통 함수를 호출한다라고 표현합니다. 함수를 호출할 때 괄호( ) 내부에 매개변수(parameter)라는 자료를 넣어 최종적으로 리턴값이라는 결과를 부릅니다. 함수의 기본 형태 def 함수 이름(매개변수1, 매개변수2, ...): 문장 def function(value, n): for i in range(n): print(value) References: Introduction to Computation...","categories": ["python"],
+        "excerpt":"함수(Function) 함수는 하나의 기능성을 가진 코드의 집합을 말합니다. 그리고 함수를 사용하는 것을 보통 함수를 호출한다라고 표현합니다. 함수를 호출할 때 괄호( ) 내부에 매개변수(parameter)라는 자료를 넣어 최종적으로 리턴값이라는 결과를 부릅니다. 함수의 기본 형태 def 함수 이름(매개변수1, 매개변수2, ...): 문장 예제 def function(value, n): for i in range(n): print(value) References: Introduction to...","categories": ["python"],
         "tags": ["python","파이썬","function"],
         "url": "http://0.0.0.0/python/py-function/",
         "teaser": null
@@ -51,5 +51,11 @@ var store = [{
         "excerpt":"Intro 현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다. 지금 제가 사용하고 있는 thinkreen 블로그는 Github.io 와 jekyll을 기반으로 하고있고, minimal-mistake 테마를 사용하고 있습니다. 그리고 개발환경은 Git repository를 매번 clone한 후 Visual Studio Code를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다. Posting step write a draft....","categories": ["blogging"],
         "tags": ["blogging","jekyll"],
         "url": "http://0.0.0.0/blogging/blogging-environment/",
+        "teaser": null
+      },{
+        "title": "minimal-mistakes font 사이즈 변경",
+        "excerpt":"minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다. Adjusting font size 해당 요소의 css파일에서 $type-size-x 속성을 각각 바꿀수도 있지만 손이 많이...","categories": ["blogging"],
+        "tags": ["blogging","minimal-mistakes","jekyll","폰트 사이즈","font size"],
+        "url": "http://0.0.0.0/blogging/blogging-FontSize/",
         "teaser": null
       }]

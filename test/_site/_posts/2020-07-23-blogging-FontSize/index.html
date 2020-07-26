@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Python 3. 자료형 - My porfolio blog</title>
+<!-- begin _includes/seo.html --><title>minimal-mistakes font 사이즈 변경 - My porfolio blog</title>
 <meta name="description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
 
 
@@ -19,8 +19,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="My porfolio blog">
-<meta property="og:title" content="Python 3. 자료형">
-<meta property="og:url" content="http://0.0.0.0/_posts/2020-02-25-py-03-DataType/">
+<meta property="og:title" content="minimal-mistakes font 사이즈 변경">
+<meta property="og:url" content="http://0.0.0.0/_posts/2020-07-23-blogging-FontSize/">
 
 
   <meta property="og:description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
@@ -44,7 +44,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0/_posts/2020-02-25-py-03-DataType/">
+<link rel="canonical" href="http://0.0.0.0/_posts/2020-07-23-blogging-FontSize/">
 
 
 
@@ -160,24 +160,40 @@
 
 
     <div class="initial-content">
-      <h1 id="자료형data-type">자료형(data type)</h1>
-<p>자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 <code class="language-plaintext highlighter-rouge">type()</code> 함수를 사용한다.</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s">"안녕하세요"</span><span class="p">))</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">str</span><span class="s">'&gt;       # 문자열
-&gt;&gt;&gt; print(type(273))
-&lt;class '</span><span class="nb">int</span><span class="s">'&gt;       # 정수
-</span></code></pre></div></div>
-<p><br /></p>
+      <p>minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다. 
+<br />
+<br /></p>
 
-<h1 id="문자열-만들기">문자열 만들기</h1>
+<h1 id="adjusting-font-size">Adjusting font size</h1>
+<p>해당 요소의 css파일에서 <code class="language-plaintext highlighter-rouge">$type-size-x</code> 속성을 각각 바꿀수도 있지만 손이 많이 가는 관계로, 폰트 사이즈를 globally 변경하기 위한 쉬운 방법 두 가지에 대해 말씀드리려고 합니다.</p>
 
-<blockquote>
-  <p>References:</p>
-  <ul>
-    <li>Introduction to Computation and Programming Using Python (John Guttag / MIT)</li>
-    <li>혼자 공부하는 파이썬 (윤인성 / 한빛미디어)</li>
-  </ul>
-</blockquote>
+<h2 id="update-maincss">Update main.css</h2>
+<p>_reset.scss파일이 크고 실수로 다른 부분을 수정해서 overriding하게 되는 리스크가 있습니다. 리스크를 피하고자 따로 폰트 사이즈만 오버라이딩 하도록 <a href="https://github.com/thinkreen/thinkreen.github.io/blob/master/assets/css/main.scss">main.scss</a> 파일에 새 css를 추가하는 방법을 추천하고, 방법은 아래와 같습니다.</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s1">"minimal-mistakes"</span><span class="p">;</span>
+
+<span class="nt">html</span> <span class="p">{</span>
+<span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span> <span class="err">//</span> <span class="err">change</span> <span class="err">to</span> <span class="err">whatever</span>
+
+<span class="err">@include</span> <span class="err">breakpoint($medium)</span> <span class="err">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span> <span class="err">//</span> <span class="err">change</span> <span class="err">to</span> <span class="err">whatever</span>
+<span class="p">}</span>
+
+<span class="k">@include</span> <span class="n">breakpoint</span><span class="p">(</span><span class="err">$</span><span class="nb">large</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span> <span class="err">//</span> <span class="err">change</span> <span class="err">to</span> <span class="err">whatever</span>
+<span class="p">}</span>
+
+<span class="k">@include</span> <span class="n">breakpoint</span><span class="p">(</span><span class="err">$</span><span class="nb">x-large</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span> <span class="err">//</span> <span class="err">change</span> <span class="err">to</span> <span class="err">whatever</span>
+<span class="p">}</span>
+<span class="err">}</span>
+</code></pre></div></div>
+<p><img src="/assets/images/font-size-Screenshot1.png" alt="font-size-Screenshot1" /></p>
+
+<h2 id="update-_resetscss">Update _reset.scss</h2>
+<p><a href="https://github.com/thinkreen/thinkreen.github.io/blob/master/_sass/minimal-mistakes/_reset.scss">_sass/minimal-mistakes/_reset.scss</a>에 있는 font-size값을 원하는 값으로 수정해 줍니다. 저는 18px가 보기 좋아서 $medium/$large/$x-large 스크린 사이즈에서 모두 18로 변경하였습니다.</p>
+
+<p><img src="/assets/images/font-size-Screenshot2.png" alt="font-size-Screenshot2" /></p>
+
 
     </div>
 

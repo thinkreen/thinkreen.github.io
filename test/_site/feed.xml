@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-24T01:46:09-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-26T00:24:28-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">minimal-mistakes font 사이즈 변경</title><link href="http://0.0.0.0/blogging/blogging-FontSize/" rel="alternate" type="text/html" title="minimal-mistakes font 사이즈 변경" /><published>2020-07-23T00:00:00-05:00</published><updated>2020-07-22T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-FontSize</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-FontSize/">&lt;p&gt;minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다. 
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;adjusting-font-size&quot;&gt;Adjusting font size&lt;/h1&gt;
+&lt;p&gt;해당 요소의 css파일에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$type-size-x&lt;/code&gt; 속성을 각각 바꿀수도 있지만 손이 많이 가는 관계로, 폰트 사이즈를 globally 변경하기 위한 쉬운 방법 두 가지에 대해 말씀드리려고 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;update-maincss&quot;&gt;Update main.css&lt;/h2&gt;
+&lt;p&gt;_reset.scss파일이 크고 실수로 다른 부분을 수정해서 overriding하게 되는 리스크가 있습니다. 리스크를 피하고자 따로 폰트 사이즈만 오버라이딩 하도록 &lt;a href=&quot;https://github.com/thinkreen/thinkreen.github.io/blob/master/assets/css/main.scss&quot;&gt;main.scss&lt;/a&gt; 파일에 새 css를 추가하는 방법을 추천하고, 방법은 아래와 같습니다.&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;minimal-mistakes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;change&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;whatever&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;breakpoint($medium)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;change&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;whatever&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;breakpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;change&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;whatever&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;breakpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;x-large&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;18px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;change&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;whatever&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/font-size-Screenshot1.png&quot; alt=&quot;font-size-Screenshot1&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;update-_resetscss&quot;&gt;Update _reset.scss&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/thinkreen/thinkreen.github.io/blob/master/_sass/minimal-mistakes/_reset.scss&quot;&gt;_sass/minimal-mistakes/_reset.scss&lt;/a&gt;에 있는 font-size값을 원하는 값으로 수정해 줍니다. 저는 18px가 보기 좋아서 $medium/$large/$x-large 스크린 사이즈에서 모두 18로 변경하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/font-size-Screenshot2.png&quot; alt=&quot;font-size-Screenshot2&quot; /&gt;&lt;/p&gt;</content><author><name>DAVID S. KIM</name></author><category term="blogging" /><category term="minimal-mistakes" /><category term="jekyll" /><category term="폰트 사이즈" /><category term="font size" /><summary type="html">minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다.</summary></entry><entry><title type="html">Blog 개발 환경 구축</title><link href="http://0.0.0.0/blogging/blogging-environment/" rel="alternate" type="text/html" title="Blog 개발 환경 구축" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-18T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-environment</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-environment/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 &lt;p&gt;현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
 지금 제가 사용하고 있는 thinkreen 블로그는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Github.io&lt;/code&gt; 와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt;을 기반으로 하고있고, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minimal-mistake&lt;/code&gt; 테마를 사용하고 있습니다.
 그리고 개발환경은 Git repository를 매번 clone한 후 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt;를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.&lt;/p&gt;
@@ -103,11 +135,12 @@ bundle exec jekyll serve --host 0.0.0.0 --port 80 --draft
 &lt;p&gt;함수는 하나의 기능성을 가진 코드의 집합을 말합니다. 그리고 함수를 사용하는 것을 보통 &lt;strong&gt;함수를 호출한다&lt;/strong&gt;라고 표현합니다. 함수를 호출할 때 괄호( ) 내부에 &lt;strong&gt;매개변수(parameter)&lt;/strong&gt;라는 자료를 넣어 최종적으로 &lt;strong&gt;리턴값&lt;/strong&gt;이라는 결과를 부릅니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;함수의-기본-형태&quot;&gt;함수의 기본 형태&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def 함수 이름(매개변수1, 매개변수2, ...):
-    문장
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;함수&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;이름&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;매개변수1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;매개변수2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;문장&lt;/span&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;예제&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -400,10 +433,13 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>DAVID S. KIM</name></author><category term="machine learning" /><category term="python" /><category term="crawling" /><summary type="html">Google image download using Selenium 머신 러닝 training을 위한 이미지 크롤링 라이브러리 google_images_downloads 가 잘 실행되지 않아서 확인해 보았다. 2020년 2월부터 Google images DOM이 image element class=”rg_meta notranslate”에서 “rg_i Q4LuWd” 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 gids 패키지를 이용하는 방법을 사용하였다.</summary></entry><entry><title type="html">Python 3. 자료형</title><link href="http://0.0.0.0/python/py-03-DataType/" rel="alternate" type="text/html" title="Python 3. 자료형" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-03-DataType</id><content type="html" xml:base="http://0.0.0.0/python/py-03-DataType/">&lt;h1 id=&quot;자료형data-type&quot;&gt;자료형(data type)&lt;/h1&gt;
 &lt;p&gt;자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type()&lt;/code&gt; 함수를 사용한다.&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;안녕하세요&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;       # 문자열
 &amp;gt;&amp;gt;&amp;gt; print(type(273))
-&amp;lt;class '&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;
+&amp;lt;class '&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;       # 정수
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;문자열-만들기&quot;&gt;문자열 만들기&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;References:&lt;/p&gt;
@@ -411,7 +447,7 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
     &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
     &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="자료형" /><category term="data types" /><summary type="html">자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &amp;gt;&amp;gt;&amp;gt; print(type(&quot;안녕하세요&quot;)) &amp;lt;class 'str'&amp;gt; &amp;gt;&amp;gt;&amp;gt; print(type(273)) &amp;lt;class 'int'&amp;gt;</summary></entry><entry><title type="html">Python 2. 기본기</title><link href="http://0.0.0.0/python/py-02-BasicElements/" rel="alternate" type="text/html" title="Python 2. 기본기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-02-BasicElements</id><content type="html" xml:base="http://0.0.0.0/python/py-02-BasicElements/">&lt;p&gt;미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="자료형" /><category term="data types" /><summary type="html">자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &amp;gt;&amp;gt;&amp;gt; print(type(&quot;안녕하세요&quot;)) &amp;lt;class 'str'&amp;gt; # 문자열 &amp;gt;&amp;gt;&amp;gt; print(type(273)) &amp;lt;class 'int'&amp;gt; # 정수</summary></entry><entry><title type="html">Python 2. 기본기</title><link href="http://0.0.0.0/python/py-02-BasicElements/" rel="alternate" type="text/html" title="Python 2. 기본기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-02-BasicElements</id><content type="html" xml:base="http://0.0.0.0/python/py-02-BasicElements/">&lt;p&gt;미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;표현식expressions과-문장statements-혹은-commands&quot;&gt;표현식(Expressions)과 문장(Statements 혹은 commands)&lt;/h1&gt;
