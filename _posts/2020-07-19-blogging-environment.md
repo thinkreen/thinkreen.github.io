@@ -8,12 +8,10 @@ tags:
 last_modified_at: 2020-07-19T12:00:00+09:00
 ---
 
-
-# Intro
-현재 포트폴리오 블로그를 운영하는 개발 환경에 대하여 이야기하려고 합니다.
 지금 제가 사용하고 있는 thinkreen 블로그는 `Github.io` 와 `jekyll`을 기반으로 하고있고, `minimal-mistake` 테마를 사용하고 있습니다.
 그리고 개발환경은 Git repository를 매번 clone한 후 `Visual Studio Code`를 통해 수정 후 commit/push를 하고 있지만, 자동으로 deploy되도록 변경할 예정입니다.
-
+<br>
+<br>
 
 # Posting step
 1. write a draft.

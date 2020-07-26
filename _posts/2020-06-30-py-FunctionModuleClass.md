@@ -13,7 +13,8 @@ last_modified_at: 2020-06-30T23:00:00+09:00
 ---
 
 파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.
-
+<br>
+<br>
 
 ![FunctionModuleClass](/assets/images/FunctionModuleClass.png)
 

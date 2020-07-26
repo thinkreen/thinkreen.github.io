@@ -8,10 +8,8 @@ tags:
     - "crawling"
 last_modified_at: 2020-07-01T12:00:00+09:00
 ---
-
-# Google image download using Selenium
-머신 러닝 training을 위한 이미지 크롤링 라이브러리 [google_images_downloads](https://pypi.org/project/google_images_download/) 가 잘 실행되지 않아서 확인해 보았다.<br>
-2020년 2월부터 Google images DOM이 image element class="rg_meta notranslate"에서 "rg_i Q4LuWd" 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 [gids](https://pypi.org/project/gids/) 패키지를 이용하는 방법을 사용하였다.
+머신 러닝 training을 위한 이미지 크롤링 라이브러리 [google_images_downloads](https://pypi.org/project/google_images_download/) 가 잘 실행되지 않아서 확인해 보았습니다.<br>
+2020년 2월부터 Google images DOM이 image element class="rg_meta notranslate"에서 "rg_i Q4LuWd" 형식으로 변경되면서 더 이상 실행이 되지 않는 문제 대안으로 Selenium을 이용한 크롤링 간편화한 [gids](https://pypi.org/project/gids/) 패키지를 이용하는 방법을 사용하였습니다..
 
 ```
 def get_soup(url,header):
