@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-26T00:24:28-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">minimal-mistakes font 사이즈 변경</title><link href="http://0.0.0.0/blogging/blogging-FontSize/" rel="alternate" type="text/html" title="minimal-mistakes font 사이즈 변경" /><published>2020-07-23T00:00:00-05:00</published><updated>2020-07-22T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-FontSize</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-FontSize/">&lt;p&gt;minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-26T01:02:56-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">.DS_Store 파일 제거</title><link href="http://0.0.0.0/blogging/blogging-DS_Store/" rel="alternate" type="text/html" title=".DS_Store 파일 제거" /><published>2020-07-24T00:00:00-05:00</published><updated>2020-07-23T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-DS_Store</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-DS_Store/">&lt;p&gt;맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;ds_store-정의&quot;&gt;DS_Store 정의&lt;/h1&gt;
+&lt;p&gt;.DS_Store (Desktop Services Store)의 약자로 윈도우 시스템에서는 thumb.db 파일과 비슷하지만 애플 mac OS X 시스템이 폴더에 접근할 때 생기는 해당 폴더에 대한 메타데이터를 저장하는 파일을 말하고 해당 디렉토리 크기, 아이콘의 위치 및 폴더의 배경에 관련한 정보들을 얻을 수 있습니다. 보통 맥 OS에서만 생성 및 사용이 되지만, 파일 공유 과정에서 .DS_Store 파일도 함께 공유되는 경우가 있습니다. 그리고 해당 파일은 대부분 쓸모 없는 경우가 많지만 forensic 관점에서 유용하게 사용되는 정보들에는 아래와 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;spotlight comment 정보.&lt;/dt&gt;
+      &lt;dd&gt;맥에서는 파일에 원하는 태그를 걸면, spotlight에서 빠르게 검색이 가능하는데 이때 구조체의 comment 영역에서 얻을 수 있습니다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;파일의 time stamp정보.&lt;/dt&gt;
+      &lt;dd&gt;구조체의 modD, moDD 영역에 해당하는 부분인데, 파일의 수정 시간과 관련된 정보를 얻을 수 있습니다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;해당 디렉토리의 논리적, 물리적 크기에 대한 정보.&lt;/dt&gt;
+      &lt;dd&gt;구조체의 logS, lg1S, phyS, ph1S에서 얻을 수 있습니다.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ds_store-파일-삭제-방법&quot;&gt;DS_Store 파일 삭제 방법&lt;/h1&gt;
+&lt;p&gt;맥 OS에서 작업 후 GitHub Desktop을 사용하여 push하게 되면 .DS_Store 파일도 함께 push되는 경우가 있습니다. 개인적으로 필요도 없어서 삭제를 하는 편입니다.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Repository에서 현재 존재하는 .DS_Store파일 제거
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;.gitignore파일로 .DS_Store 라인 추가
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(base) sunwookkim@MacBook-Pro thinkreen.github.io % echo .DS_Store &amp;gt;&amp;gt; .gitignore
+(base) sunwookkim@MacBook-Pro thinkreen.github.io % git add .gitignore
+(base) sunwookkim@MacBook-Pro thinkreen.github.io % git commit -m '.DS_Store banished!'
+[master c8fe107] .DS_Store banished!
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ delete mode 100644 test/_sass/.DS_Store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>DAVID S. KIM</name></author><category term="blogging" /><category term=".DS_Store" /><category term="jekyll" /><summary type="html">맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다.</summary></entry><entry><title type="html">minimal-mistakes font 사이즈 변경</title><link href="http://0.0.0.0/blogging/blogging-FontSize/" rel="alternate" type="text/html" title="minimal-mistakes font 사이즈 변경" /><published>2020-07-23T00:00:00-05:00</published><updated>2020-07-22T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-FontSize</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-FontSize/">&lt;p&gt;minimal-mistakes 테마로 블로그를 만들었을 때, 웹 브라우저 화면 사이즈에 따라 폰트 사이즈가 변경이 됩니다. 하지만 개인 적으로 flexible box 레이아웃을 사용하되 폰트 사이즈는 고정으로 하는 것을 더 선호합니다. 그래서 간단하게 폰트 사이즈를 globally 변경하는 방법을 확인 하겠습니다. 
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -516,33 +561,4 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
     &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
     &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본 용어" /><summary type="html">미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.</summary></entry><entry><title type="html">Python 1. 시작하기</title><link href="http://0.0.0.0/python/py-01-Intro/" rel="alternate" type="text/html" title="Python 1. 시작하기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-01-Intro</id><content type="html" xml:base="http://0.0.0.0/python/py-01-Intro/">&lt;p&gt;2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다.
-파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다. 
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;파이썬-설치&quot;&gt;파이썬 설치&lt;/h1&gt;
-&lt;h2 id=&quot;os-x&quot;&gt;OS X&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;보통 python 2.X 버전은 맥에 설치되어 있음.&lt;/li&gt;
-  &lt;li&gt;python 3.X 사용을 위해서는 파이썬 공식 홈페이지 &lt;a href=&quot;https://www.python.org&quot;&gt;python&lt;/a&gt;에 접속하여 다운로드.&lt;/li&gt;
-  &lt;li&gt;설치 후, terminal에서 python3라고 입력해서 아래와 같은 글이 뜨면 성공.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  (base) sunwookkim@MacBook-Pro ~ % python3
-  Python 3.7.6 (default, Jan  8 2020, 13:42:34) 
-  [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
-  Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-  &amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;python 3.X 사용을 위해서는 파이썬 공식 홈페이지 &lt;a href=&quot;https://www.python.org&quot;&gt;python&lt;/a&gt;에 접속하여 다운로드.&lt;/li&gt;
-  &lt;li&gt;설치할 때 반드시 [Add Python 3.X to PATH]를 체크 후 설치해야 명령 프롬프트에서 [python]이라고 입력해서 파이썬을 실행할 수 있음.&lt;/li&gt;
-  &lt;li&gt;윈도우키 + R을 눌러 실행 창에 powershell이라고 치고, 화면에 python이라고 입력 후 오류가 있는지 확인. 오류가 없으면 설치 성공, 아니면 다시 설치.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;파이썬-실행&quot;&gt;파이썬 실행&lt;/h1&gt;
-&lt;p&gt;파이썬 설치시 함께 따라오는 IDLE(Integrated Development and Learning Environment)가 있지만, 개인적으로 &lt;a href=&quot;https://code.visualstudio.com&quot;&gt;Visual Studio Code&lt;/a&gt;를 사용하는 것을 선호한다. 그리고 편리한 외부 패키지나 라이브러리 설치 및 환경 변수 관리를 위해 &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;Anaconda&lt;/a&gt;를 사용한다.&lt;/p&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><summary type="html">2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다. 파이썬이 데스크탑 어플리케이션부터 data analysis, machine learning, IoT 등 다양한 분양에서 활용을 할 수 있고, 초보자들이 쉽게 사용할 수 있는 라이브러리나 오픈 소스들이 많아서 나같은 비전공자들에게 인기 있는 것 같다. 하지만 C, C#, C++ 등 타 언어들 보다 프로그램 연산 속도가 현저히 떨어진다.</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본 용어" /><summary type="html">미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.</summary></entry></feed>

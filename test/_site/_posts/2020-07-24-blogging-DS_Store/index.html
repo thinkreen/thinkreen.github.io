@@ -1,0 +1,283 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>.DS_Store 파일 제거 - My porfolio blog</title>
+<meta name="description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
+
+
+  <meta name="author" content="DAVID S. KIM">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My porfolio blog">
+<meta property="og:title" content=".DS_Store 파일 제거">
+<meta property="og:url" content="http://0.0.0.0/_posts/2020-07-24-blogging-DS_Store/">
+
+
+  <meta property="og:description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
+
+
+
+  <meta property="og:image" content="http://0.0.0.0/assets/images/site-logo.png">
+
+
+
+
+
+
+
+
+
+  
+
+  
+    <meta property="fb:app_id" content="314948646216110">
+  
+
+
+<link rel="canonical" href="http://0.0.0.0/_posts/2020-07-24-blogging-DS_Store/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "DAVID S. KIM",
+      "url": "http://0.0.0.0/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My porfolio blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          My porfolio blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <p>맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다.
+<br />
+<br /></p>
+
+<h1 id="ds_store-정의">DS_Store 정의</h1>
+<p>.DS_Store (Desktop Services Store)의 약자로 윈도우 시스템에서는 thumb.db 파일과 비슷하지만 애플 mac OS X 시스템이 폴더에 접근할 때 생기는 해당 폴더에 대한 메타데이터를 저장하는 파일을 말하고 해당 디렉토리 크기, 아이콘의 위치 및 폴더의 배경에 관련한 정보들을 얻을 수 있습니다. 보통 맥 OS에서만 생성 및 사용이 되지만, 파일 공유 과정에서 .DS_Store 파일도 함께 공유되는 경우가 있습니다. 그리고 해당 파일은 대부분 쓸모 없는 경우가 많지만 forensic 관점에서 유용하게 사용되는 정보들에는 아래와 같습니다.</p>
+<ul>
+  <li>
+    <dl>
+      <dt>spotlight comment 정보.</dt>
+      <dd>맥에서는 파일에 원하는 태그를 걸면, spotlight에서 빠르게 검색이 가능하는데 이때 구조체의 comment 영역에서 얻을 수 있습니다.</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>파일의 time stamp정보.</dt>
+      <dd>구조체의 modD, moDD 영역에 해당하는 부분인데, 파일의 수정 시간과 관련된 정보를 얻을 수 있습니다.</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>해당 디렉토리의 논리적, 물리적 크기에 대한 정보.</dt>
+      <dd>구조체의 logS, lg1S, phyS, ph1S에서 얻을 수 있습니다.</dd>
+    </dl>
+  </li>
+</ul>
+
+<p><br /></p>
+<h1 id="ds_store-파일-삭제-방법">DS_Store 파일 삭제 방법</h1>
+<p>맥 OS에서 작업 후 GitHub Desktop을 사용하여 push하게 되면 .DS_Store 파일도 함께 push되는 경우가 있습니다. 개인적으로 필요도 없어서 삭제를 하는 편입니다.</p>
+<ol>
+  <li>Repository에서 현재 존재하는 .DS_Store파일 제거
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+</code></pre></div>    </div>
+  </li>
+  <li>.gitignore파일로 .DS_Store 라인 추가
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) sunwookkim@MacBook-Pro thinkreen.github.io % echo .DS_Store &gt;&gt; .gitignore
+(base) sunwookkim@MacBook-Pro thinkreen.github.io % git add .gitignore
+(base) sunwookkim@MacBook-Pro thinkreen.github.io % git commit -m '.DS_Store banished!'
+[master c8fe107] .DS_Store banished!
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ delete mode 100644 test/_sass/.DS_Store
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<script data-ad-client="ca-pub-3395551554460436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/thinkreendavid/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 DAVID S. KIM. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

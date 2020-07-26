@@ -58,4 +58,10 @@ var store = [{
         "tags": ["blogging","minimal-mistakes","jekyll","폰트 사이즈","font size"],
         "url": "http://0.0.0.0/blogging/blogging-FontSize/",
         "teaser": null
+      },{
+        "title": ".DS_Store 파일 제거",
+        "excerpt":"맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다. DS_Store 정의 .DS_Store (Desktop Services Store)의 약자로 윈도우 시스템에서는 thumb.db 파일과 비슷하지만 애플 mac OS X 시스템이 폴더에 접근할 때 생기는 해당 폴더에 대한 메타데이터를 저장하는 파일을...","categories": ["blogging"],
+        "tags": ["blogging",".DS_Store","jekyll"],
+        "url": "http://0.0.0.0/blogging/blogging-DS_Store/",
+        "teaser": null
       }]
