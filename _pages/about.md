@@ -6,16 +6,6 @@ author_profile: true
 toc_sticky: true #스크롤 내릴 때 가티 내려가는 목차
 ---
 
-## INTRO
-Hi, my name is David S. Kim.
-
-I love learning new technical/soft skills and expanding my knowledge boundaries. But I believe that if I cannot explain or share what I learned to others, I didn't acquire it perfectly. Therefore, I am going to share daily what I learned through my portfolio blog. And I will post my accomplishments, too.
-
-If you are interested in my career or projects, even different opinion or suggestion to my posting, please add your comment or send me an email.
-
-Thank you so much.
-
-
 ![work](/assets/images/work.png){:.image-color-dark } 
 ## WORK EXPERIENCES 
 Passionate manufacturing system engineer with 7+ years of progressive experiences in designing the mfg system architecture and automation robots. Especially, focused on developing and optimizing the automated dispatching scheduler system that predicts the factory inventory position and optimizes mfg schedule based on the enumerous mfg simulation data in the last 5 years. 
