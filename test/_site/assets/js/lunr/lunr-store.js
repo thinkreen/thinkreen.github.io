@@ -26,7 +26,7 @@ var store = [{
         "title": "Markdown Cheatsheets",
         "excerpt":"Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet Shortcuts escape key: changes to command mode escape then s: shortcut for “save” escape then y: switch to code cell escape then m: switch to Markdown cell Shift + Enter:...","categories": ["markdown"],
         "tags": ["jupyter notebook","markdown"],
-        "url": "http://0.0.0.0/markdown/MarkdownCheatsheets/",
+        "url": "http://0.0.0.0/markdown/markdown-cheatsheets/",
         "teaser": null
       },{
         "title": "Python 라이브러리/패키지/모듈/함수/클래스",
@@ -63,5 +63,11 @@ var store = [{
         "excerpt":"맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다. DS_Store 정의 .DS_Store (Desktop Services Store)의 약자로 윈도우 시스템에서는 thumb.db 파일과 비슷하지만 애플 mac OS X 시스템이 폴더에 접근할 때 생기는 해당 폴더에 대한 메타데이터를 저장하는 파일을...","categories": ["blogging"],
         "tags": ["blogging",".DS_Store","jekyll"],
         "url": "http://0.0.0.0/blogging/blogging-DS_Store/",
+        "teaser": null
+      },{
+        "title": "Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기",
+        "excerpt":"Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 Variable Inspector나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다. Install jupyter_contrib_nbextensions 확장 프로그램 설치하기 pip로 설치하실 경우 pip install jupyter_contrib_nbextensions # 라이브러리 설치 jupyter contrib nbextension install --user # jupyter notebook에서 사용할 수 있도록 등록 conda로 설치하실 경우 conda install -c conda-forge...","categories": ["jupyter"],
+        "tags": ["jupyter","주피터 노트북","확장 프로그램","extension"],
+        "url": "http://0.0.0.0/jupyter/jupyter-notebook-extensions/",
         "teaser": null
       }]

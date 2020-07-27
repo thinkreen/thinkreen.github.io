@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>My porfolio blog - Page 3</title>
+<!-- begin _includes/seo.html --><title>Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기 - My porfolio blog</title>
 <meta name="description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
 
 
@@ -19,8 +19,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="My porfolio blog">
-<meta property="og:title" content="My porfolio blog">
-<meta property="og:url" content="http://0.0.0.0/page3/">
+<meta property="og:title" content="Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기">
+<meta property="og:url" content="http://0.0.0.0/_posts/2020-07-26-jupyter-notebook-extensions/">
 
 
   <meta property="og:description" content="Happy Learning. 개발자 포트폴리오 및 공부 블로그">
@@ -44,10 +44,8 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0/page3/">
+<link rel="canonical" href="http://0.0.0.0/_posts/2020-07-26-jupyter-notebook-extensions/">
 
-
-  <link rel="prev" href="http://0.0.0.0/page2/">
 
 
 
@@ -108,7 +106,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--default">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -162,251 +160,31 @@
 
 
     <div class="initial-content">
-      
+      <p>Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 <code class="language-plaintext highlighter-rouge">Variable Inspector</code>나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.
+<br />
+<br /></p>
+
+<h1 id="install-jupyter_contrib_nbextensions-확장-프로그램-설치하기">Install jupyter_contrib_nbextensions 확장 프로그램 설치하기</h1>
+<h2 id="pip로-설치하실-경우">pip로 설치하실 경우</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter_contrib_nbextensions    # 라이브러리 설치
+jupyter contrib nbextension install --user  # jupyter notebook에서 사용할 수 있도록 등록
+</code></pre></div></div>
+<h2 id="conda로-설치하실-경우">conda로 설치하실 경우</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c conda-forge jupyter_contrib_nbextensions   # conda-forge가 제공하는 extension설치
+</code></pre></div></div>
+<p><br /></p>
+
+<h1 id="use-extensions">Use extensions</h1>
+<p>만약 주피터 노트북이 실행되고 있다면 창을 모두 닫은 뒤에 다시 실행시킵니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
+</code></pre></div></div>
+<p>그 후, <a href="http://localhost:8888/nbextensions">nbextensions</a> 메뉴로 갑니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8888/nbextensions
+</code></pre></div></div>
+<p>정상 설치후 위의 링크로 가면 다음과 같은 웹페이지가 보입니다. 필요하신 확장 프로그램을 선택하고 enable을 누르면 적용이 됩니다.
+만약 제일 상단에 <code class="language-plaintext highlighter-rouge">disable configuration for nbextensions</code>메뉴에 체크박스가 체크 되어있다면 언체크하신 후에, 원하시는 확장 프로그램을 선택하시면 됩니다.
+<img src="/assets/images/jupyter-extensions.png" alt="jupyter extensions" /></p>
 
-
-  
-
-
-<div id="main" role="main">
-  
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person">
-
-  
-    <div class="author__avatar">
-      
-        <img src="/assets/images/bio-photo.png" alt="DAVID S. KIM" itemprop="image">
-      
-    </div>
-  
-
-  <div class="author__content">
-    
-      <h3 class="author__name" itemprop="name">DAVID S. KIM</h3>
-    
-    
-      <div class="author__bio" itemprop="description">
-        <p>Happy Learning! 개발자 포트폴리오 및 공부 블로그입니다.</p>
-
-      </div>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Austin, TX</span>
-        </li>
-      
-
-      
-        
-          
-            <li><a href="mailto:thinkreen@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-          
-        
-          
-        
-          
-            <li><a href="https://github.com/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-          
-            <li><a href="https://www.linkedin.com/in/thinkreen" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
-          
-        
-          
-            <li><a href="https://www.facebook.com/thinkreendavid/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
-          
-        
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
-
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    <img src="/assets/images/RichardFeynman.jpg" alt="RichardFeynman" style="width:300px; height:300px;">
-<p>Richard Feynman says: <blockquote>I really can’t do a good job, any job, of explaining magnetic force in terms of something else you’re more familiar with, 
-   because I don’t understand it in terms of anything else you’re more familiar with.</blockquote></p>
-<div class="Intro">
-  <h3>Intro</h3>
-  <p>Hi, my name is David S. Kim.</p>
-  <p>I love learning and expanding my knowledge to the new boundaries.
-     And I believe that if I can't explain something what I know, I don't understand it completely. 
-     In order to increasing my deeper understaning of the subject matter, I would like to share to others what I learned and what I achieved through my portfolio blog.</p>
-  <p>If you have any comment or suggestion to my posting, I welcome yours.</p>
-  <p>Thank you so much.</p>
-</div>
-
-
-
-<h3 class="archive__subtitle">Recent posts</h3>
-
-
-
-
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/python/py-02-BasicElements/" rel="permalink">Python 2. 기본기
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루...</p>
-  </article>
-</div>
-
-
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/python/py-01-Intro/" rel="permalink">Python 1. 시작하기
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">2013년에 학교를 졸업하고 C++ 다음으로 쉽고 빠르게 배울 수 있는 언어가 무엇일까를 찾다가 처음 python을 접하게 되었는데, 이 글을 쓰는 2020년에도 파이썬만큼 컴공 비전공자들이 쉽게 배울 수 있는 프로그래밍 언어는 어디에도 없는 것 같다.
-파이썬이 데스크탑 어플리케이...</p>
-  </article>
-</div>
-
-
-
-
-<nav class="pagination">
-  
-  <ul>
-    
-    
-      
-        <li><a href="/page2/">Previous</a></li>
-      
-    
-
-    
-    
-      <li><a href="/">1</a></li>
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-        
-        
-        
-        <li><a href="/page2/">2</a></li>
-      
-    
-
-    
-    
-
-    
-      <li><a href="#" class="disabled current">3</a></li>
-    
-
-    
-    
-      <li><a href="#" class="disabled"><span aria-hidden="true">Next</span></a></li>
-    
-  </ul>
-</nav>
-
-
-
-  </div>
-</div>
     </div>
 
     

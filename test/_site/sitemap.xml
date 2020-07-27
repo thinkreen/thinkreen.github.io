@@ -17,7 +17,7 @@
 <lastmod>2020-06-30T22:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0/markdown/MarkdownCheatsheets/</loc>
+<loc>http://0.0.0.0/markdown/markdown-cheatsheets/</loc>
 <lastmod>2020-06-09T22:00:00-05:00</lastmod>
 </url>
 <url>
@@ -45,6 +45,10 @@
 <lastmod>2020-07-23T22:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0/jupyter/jupyter-notebook-extensions/</loc>
+<lastmod>2020-07-26T09:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0/_posts/2020-02-25-py-01-Intro/</loc>
 <lastmod>2020-07-23T01:59:22-05:00</lastmod>
 </url>
@@ -61,8 +65,8 @@
 <lastmod>2020-07-20T03:47:48-05:00</lastmod>
 </url>
 <url>
-<loc>http://0.0.0.0/_posts/2020-06-10-MarkdownCheatsheets/</loc>
-<lastmod>2020-07-20T03:47:48-05:00</lastmod>
+<loc>http://0.0.0.0/_posts/2020-06-10-markdown-cheatsheets/</loc>
+<lastmod>2020-07-27T01:37:45-05:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0/_posts/2020-06-30-py-FunctionModuleClass/</loc>
@@ -87,6 +91,10 @@
 <url>
 <loc>http://0.0.0.0/_posts/2020-07-24-blogging-DS_Store/</loc>
 <lastmod>2020-07-26T01:06:20-05:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0/_posts/2020-07-26-jupyter-notebook-extensions/</loc>
+<lastmod>2020-07-27T01:35:21-05:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0/_pages/about/</loc>

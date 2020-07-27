@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Markdown Cheatsheets - My porfolio blog</title>
-<meta name="description" content="Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet">
+<!-- begin _includes/seo.html --><title>Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기 - My porfolio blog</title>
+<meta name="description" content="Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 Variable Inspector나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.">
 
 
   <meta name="author" content="DAVID S. KIM">
@@ -19,11 +19,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="My porfolio blog">
-<meta property="og:title" content="Markdown Cheatsheets">
-<meta property="og:url" content="http://0.0.0.0/markdown/MarkdownCheatsheets/">
+<meta property="og:title" content="Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기">
+<meta property="og:url" content="http://0.0.0.0/jupyter/jupyter-notebook-extensions/">
 
 
-  <meta property="og:description" content="Markdown Cheatsheet This is intended as a quick reference and showcase for Markdown. For more cheatsheet, check Adam-P Markdown Cheatsheet">
+  <meta property="og:description" content="Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 Variable Inspector나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.">
 
 
 
@@ -33,11 +33,11 @@
 
 
 
-  <meta property="article:published_time" content="2020-06-10T00:00:00-05:00">
+  <meta property="article:published_time" content="2020-07-26T00:00:00-05:00">
 
 
 
-  <meta property="article:modified_time" content="2020-06-09T22:00:00-05:00">
+  <meta property="article:modified_time" content="2020-07-26T09:00:00-05:00">
 
 
 
@@ -48,7 +48,7 @@
   
 
 
-<link rel="canonical" href="http://0.0.0.0/markdown/MarkdownCheatsheets/">
+<link rel="canonical" href="http://0.0.0.0/jupyter/jupyter-notebook-extensions/">
 
 
 
@@ -187,7 +187,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#markdown" itemprop="item"><span itemprop="name">Markdown</span></a>
+          <a href="/categories/#jupyter" itemprop="item"><span itemprop="name">Jupyter</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -195,7 +195,7 @@
     
       
       
-        <li class="current">Markdown Cheatsheets</li>
+        <li class="current">Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기</li>
       
     
   </ol>
@@ -330,15 +330,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Markdown Cheatsheets">
-    <meta itemprop="description" content="Markdown CheatsheetThis is intended as a quick reference and showcase for Markdown.For more cheatsheet, check Adam-P Markdown Cheatsheet">
-    <meta itemprop="datePublished" content="2020-06-10T00:00:00-05:00">
-    <meta itemprop="dateModified" content="2020-06-09T22:00:00-05:00">
+    <meta itemprop="headline" content="Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기">
+    <meta itemprop="description" content="Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 Variable Inspector나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.">
+    <meta itemprop="datePublished" content="2020-07-26T00:00:00-05:00">
+    <meta itemprop="dateModified" content="2020-07-26T09:00:00-05:00">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Markdown Cheatsheets
+          <h1 id="page-title" class="page__title" itemprop="headline">Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기
 </h1>
           
         </header>
@@ -351,21 +351,13 @@
               
                 <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
                 <ul class="toc__menu">
-  <li><a href="#markdown-cheatsheet">Markdown Cheatsheet</a>
+  <li><a href="#install-jupyter_contrib_nbextensions-확장-프로그램-설치하기">Install jupyter_contrib_nbextensions 확장 프로그램 설치하기</a>
     <ul>
-      <li><a href="#shortcuts">Shortcuts</a></li>
-      <li><a href="#headers">Headers</a></li>
-      <li><a href="#emphasis">Emphasis</a></li>
-      <li><a href="#code-and-syntax-highlighting">Code and Syntax Highlighting</a></li>
-      <li><a href="#math-expressions">Math expressions</a></li>
-      <li><a href="#add-images">Add images</a></li>
-      <li><a href="#colors">Colors:</a></li>
-      <li><a href="#indented-quoting">Indented quoting</a></li>
-      <li><a href="#bullets">Bullets</a></li>
-      <li><a href="#internal-links">Internal links</a></li>
-      <li><a href="#external-links">External links</a></li>
+      <li><a href="#pip로-설치하실-경우">pip로 설치하실 경우</a></li>
+      <li><a href="#conda로-설치하실-경우">conda로 설치하실 경우</a></li>
     </ul>
   </li>
+  <li><a href="#use-extensions">Use extensions</a></li>
 </ul>
 
               
@@ -392,95 +384,30 @@
             </nav>
           </aside>
         
-        <h1 id="markdown-cheatsheet">Markdown Cheatsheet</h1>
-<p>This is intended as a quick reference and showcase for Markdown.
-For more cheatsheet, check <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Adam-P Markdown Cheatsheet</a></p>
+        <p>Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 <code class="language-plaintext highlighter-rouge">Variable Inspector</code>나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.
+<br />
+<br /></p>
 
-<h2 id="shortcuts">Shortcuts</h2>
-
-<p><code class="language-plaintext highlighter-rouge">escape</code> key: changes to command mode 
-<br /><code class="language-plaintext highlighter-rouge">escape</code> then <code class="language-plaintext highlighter-rouge">s</code>: shortcut for “save”
-<br /><code class="language-plaintext highlighter-rouge">escape</code> then <code class="language-plaintext highlighter-rouge">y</code>: switch to code cell
-<br /><code class="language-plaintext highlighter-rouge">escape</code> then <code class="language-plaintext highlighter-rouge">m</code>: switch to Markdown cell
-<br /><code class="language-plaintext highlighter-rouge">Shift + Enter</code>: run code cells</p>
-
-<h2 id="headers">Headers</h2>
-<p>Put 1-6 hash marks(#) at the beginning of the line</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Header 1 
-## Header 2 
-### Header 3
+<h1 id="install-jupyter_contrib_nbextensions-확장-프로그램-설치하기">Install jupyter_contrib_nbextensions 확장 프로그램 설치하기</h1>
+<h2 id="pip로-설치하실-경우">pip로 설치하실 경우</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter_contrib_nbextensions    # 라이브러리 설치
+jupyter contrib nbextension install --user  # jupyter notebook에서 사용할 수 있도록 등록
 </code></pre></div></div>
-<p>renders as
-<img src="/assets/images/headers.png" alt="header" /></p>
-
-<h2 id="emphasis">Emphasis</h2>
-
-<ul>
-  <li>For bold, wrap the text in two asterisks or underscores (<code class="language-plaintext highlighter-rouge">**bold** or __bold__</code>) renders as <strong>bold</strong></li>
-  <li>For italics, wrap the text in one asterisk or underscore (<code class="language-plaintext highlighter-rouge">*italic* or _italic_</code>) renders as <em>italic</em></li>
-  <li>For strikethrough, wrap the text in two tildes (<code class="language-plaintext highlighter-rouge">~~strikethrough~~</code>) renders as <del>strikethrough</del></li>
-</ul>
-
-<h2 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h2>
-<ol>
-  <li>code
-    <ul>
-      <li>start a new line and wrap the text in three backticks.</li>
-      <li>indent each line of the code block with four spaces.</li>
-    </ul>
-  </li>
-  <li>Syntax Highlighting
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> `sysntax highlighting` 
-</code></pre></div>    </div>
-    <p>renders as <code class="language-plaintext highlighter-rouge">sysntax highlighting</code></p>
-  </li>
-</ol>
-
-<h2 id="math-expressions">Math expressions</h2>
-
-<p>Create math expressions in Markdown cells using LaTeX symbols.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$y = mx + b$ renders as $y = mx + b$
+<h2 id="conda로-설치하실-경우">conda로 설치하실 경우</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c conda-forge jupyter_contrib_nbextensions   # conda-forge가 제공하는 extension설치
 </code></pre></div></div>
+<p><br /></p>
 
-<h2 id="add-images">Add images</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt Text](Url)
+<h1 id="use-extensions">Use extensions</h1>
+<p>만약 주피터 노트북이 실행되고 있다면 창을 모두 닫은 뒤에 다시 실행시킵니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
 </code></pre></div></div>
-
-<p><img src="https://avatars3.githubusercontent.com/u/14879156?s=460&amp;u=30c6440b9fb8e96506494a80cb01b1c80039f83e&amp;v=4" alt="My profile" /></p>
-
-<h2 id="colors">Colors:</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;font color=blue|red|green|pink|yellow&gt;Text&lt;/font&gt; 
+<p>그 후, <a href="http://localhost:8888/nbextensions">nbextensions</a> 메뉴로 갑니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:8888/nbextensions
 </code></pre></div></div>
-<p>Not all markdown code works within a font tag, so review your colored text carefully!</p>
-
-<h2 id="indented-quoting">Indented quoting</h2>
-<p>Use a greater than sign (&gt;) and then a space, then type the text. The text is indented and has a gray horizontal line to the left of it until the next carriage return.</p>
-
-<h2 id="bullets">Bullets</h2>
-<p>Use the dash sign (- ) with a space after it, or a space, a dash, and a space ( - ), to create a circular bullet. To create a sub bullet, use a tab followed a dash and a space. You can also use an asterisk instead of a dash, and it works the same.</p>
-
-<h2 id="internal-links">Internal links</h2>
-<p>To link to a section, use this code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[section title](#section-title)
-</code></pre></div></div>
-<p>For the text in the parentheses, replace spaces and special characters with a hyphen. Make sure to test all the links!
-Alternatively, you can add an ID for a section right above the section title. Use this code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a id="section_ID"&gt;&lt;/a&gt; 
-</code></pre></div></div>
-<p>Make sure that the section_ID is unique within the notebook.
-Use this code for the link and make sure to test all the links!</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[section title](#section_ID)
-</code></pre></div></div>
-
-<h2 id="external-links">External links</h2>
-<p>Use this code and test all links!</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link text](http://url)
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
+<p>정상 설치후 위의 링크로 가면 다음과 같은 웹페이지가 보입니다. 필요하신 확장 프로그램을 선택하고 enable을 누르면 적용이 됩니다.
+만약 제일 상단에 <code class="language-plaintext highlighter-rouge">disable configuration for nbextensions</code>메뉴에 체크박스가 체크 되어있다면 언체크하신 후에, 원하시는 확장 프로그램을 선택하시면 됩니다.
+<img src="/assets/images/jupyter-extensions.png" alt="jupyter extensions" /></p>
 
         
       </section>
@@ -501,11 +428,19 @@ Use this code for the link and make sure to test all the links!</p>
     
       
       
-      <a href="/tags/#jupyter-notebook" class="page__taxonomy-item" rel="tag">jupyter notebook</a><span class="sep">, </span>
+      <a href="/tags/#extension" class="page__taxonomy-item" rel="tag">extension</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#markdown" class="page__taxonomy-item" rel="tag">markdown</a>
+      <a href="/tags/#jupyter" class="page__taxonomy-item" rel="tag">jupyter</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%EC%A3%BC%ED%94%BC%ED%84%B0-%EB%85%B8%ED%8A%B8%EB%B6%81" class="page__taxonomy-item" rel="tag">주피터 노트북</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8" class="page__taxonomy-item" rel="tag">확장 프로그램</a>
     
     </span>
   </p>
@@ -526,14 +461,14 @@ Use this code for the link and make sure to test all the links!</p>
     
       
       
-      <a href="/categories/#markdown" class="page__taxonomy-item" rel="tag">markdown</a>
+      <a href="/categories/#jupyter" class="page__taxonomy-item" rel="tag">jupyter</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-10">June 10, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-26">July 26, 2020</time></p>
 
 
       </footer>
@@ -543,23 +478,22 @@ Use this code for the link and make sure to test all the links!</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Markdown+Cheatsheets%20http%3A%2F%2F0.0.0.0%2Fmarkdown%2FMarkdownCheatsheets%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Jupyter+Notebook+Extensions+%EC%A3%BC%ED%94%BC%ED%84%B0+%EB%85%B8%ED%8A%B8%EB%B6%81+%ED%99%95%EC%9E%A5+%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8+%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20http%3A%2F%2F0.0.0.0%2Fjupyter%2Fjupyter-notebook-extensions%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%2Fmarkdown%2FMarkdownCheatsheets%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F0.0.0.0%2Fjupyter%2Fjupyter-notebook-extensions%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%2Fmarkdown%2FMarkdownCheatsheets%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2F0.0.0.0%2Fjupyter%2Fjupyter-notebook-extensions%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/machine%20learning/ml-WebCrawling/" class="pagination--pager" title="Web Crawling by Selenium
+      <a href="/blogging/blogging-DS_Store/" class="pagination--pager" title=".DS_Store 파일 제거
 ">Previous</a>
     
     
-      <a href="/python/py-FunctionModuleClass/" class="pagination--pager" title="Python 라이브러리/패키지/모듈/함수/클래스
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 

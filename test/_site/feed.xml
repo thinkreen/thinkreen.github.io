@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-27T01:00:58-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">.DS_Store 파일 제거</title><link href="http://0.0.0.0/blogging/blogging-DS_Store/" rel="alternate" type="text/html" title=".DS_Store 파일 제거" /><published>2020-07-24T00:00:00-05:00</published><updated>2020-07-23T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-DS_Store</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-DS_Store/">&lt;p&gt;맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://0.0.0.0/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0/" rel="alternate" type="text/html" /><updated>2020-07-27T01:37:46-05:00</updated><id>http://0.0.0.0/feed.xml</id><title type="html">My porfolio blog</title><subtitle>Happy Learning. 개발자 포트폴리오 및 공부 블로그</subtitle><author><name>DAVID S. KIM</name></author><entry><title type="html">Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기</title><link href="http://0.0.0.0/jupyter/jupyter-notebook-extensions/" rel="alternate" type="text/html" title="Jupyter Notebook Extensions 주피터 노트북 확장 프로그램 사용하기" /><published>2020-07-26T00:00:00-05:00</published><updated>2020-07-26T09:00:00-05:00</updated><id>http://0.0.0.0/jupyter/jupyter-notebook-extensions</id><content type="html" xml:base="http://0.0.0.0/jupyter/jupyter-notebook-extensions/">&lt;p&gt;Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Variable Inspector&lt;/code&gt;나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;install-jupyter_contrib_nbextensions-확장-프로그램-설치하기&quot;&gt;Install jupyter_contrib_nbextensions 확장 프로그램 설치하기&lt;/h1&gt;
+&lt;h2 id=&quot;pip로-설치하실-경우&quot;&gt;pip로 설치하실 경우&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install jupyter_contrib_nbextensions    # 라이브러리 설치
+jupyter contrib nbextension install --user  # jupyter notebook에서 사용할 수 있도록 등록
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;conda로-설치하실-경우&quot;&gt;conda로 설치하실 경우&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install -c conda-forge jupyter_contrib_nbextensions   # conda-forge가 제공하는 extension설치
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;use-extensions&quot;&gt;Use extensions&lt;/h1&gt;
+&lt;p&gt;만약 주피터 노트북이 실행되고 있다면 창을 모두 닫은 뒤에 다시 실행시킵니다.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;그 후, &lt;a href=&quot;http://localhost:8888/nbextensions&quot;&gt;nbextensions&lt;/a&gt; 메뉴로 갑니다.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://localhost:8888/nbextensions
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;정상 설치후 위의 링크로 가면 다음과 같은 웹페이지가 보입니다. 필요하신 확장 프로그램을 선택하고 enable을 누르면 적용이 됩니다.
+만약 제일 상단에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;disable configuration for nbextensions&lt;/code&gt;메뉴에 체크박스가 체크 되어있다면 언체크하신 후에, 원하시는 확장 프로그램을 선택하시면 됩니다.
+&lt;img src=&quot;/assets/images/jupyter-extensions.png&quot; alt=&quot;jupyter extensions&quot; /&gt;&lt;/p&gt;</content><author><name>DAVID S. KIM</name></author><category term="jupyter" /><category term="주피터 노트북" /><category term="확장 프로그램" /><category term="extension" /><summary type="html">Jupyter Notebook을 사용하면서 유용하고 많이 사용하실 만한 Variable Inspector나 ‘Table of Contents’같은 확장 프로그램들에 대하여 소개하고자 합니다.</summary></entry><entry><title type="html">.DS_Store 파일 제거</title><link href="http://0.0.0.0/blogging/blogging-DS_Store/" rel="alternate" type="text/html" title=".DS_Store 파일 제거" /><published>2020-07-24T00:00:00-05:00</published><updated>2020-07-23T22:00:00-05:00</updated><id>http://0.0.0.0/blogging/blogging-DS_Store</id><content type="html" xml:base="http://0.0.0.0/blogging/blogging-DS_Store/">&lt;p&gt;맥에서 블로그 업데이트 하고 commit하려고 보면 가끔 .DS_Store 파일이 존재하는데, 깃헙에 블로그 업뎃할 때는 불필요할 것 같아서 제거 하는 방법을 설명 하고자 합니다.
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
@@ -284,7 +307,7 @@ game/
     &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
     &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/MarkdownCheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/MarkdownCheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/MarkdownCheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="library" /><category term="package" /><category term="module" /><category term="function" /><category term="class" /><summary type="html">파이썬을 처음 시작했을 때 라이브러리/패키지, 모듈, 함수/클래스 간의 개념이 머릿속에 정확하게 자리 잡히지 않아서 고생한 적이 있었습니다. 그래서 그 개념을 간략하게 설명하고 다음 포스팅에서 각각의 사용법에 대하여 설명하겠습니다.</summary></entry><entry><title type="html">Markdown Cheatsheets</title><link href="http://0.0.0.0/markdown/markdown-cheatsheets/" rel="alternate" type="text/html" title="Markdown Cheatsheets" /><published>2020-06-10T00:00:00-05:00</published><updated>2020-06-09T22:00:00-05:00</updated><id>http://0.0.0.0/markdown/markdown-cheatsheets</id><content type="html" xml:base="http://0.0.0.0/markdown/markdown-cheatsheets/">&lt;h1 id=&quot;markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/h1&gt;
 &lt;p&gt;This is intended as a quick reference and showcase for Markdown.
 For more cheatsheet, check &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Adam-P Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
 
@@ -492,73 +515,4 @@ Install on your machine. exception: Message: ‘chromedriver’ executable needs
     &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
     &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="자료형" /><category term="data types" /><summary type="html">자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &amp;gt;&amp;gt;&amp;gt; print(type(&quot;안녕하세요&quot;)) &amp;lt;class 'str'&amp;gt; # 문자열 &amp;gt;&amp;gt;&amp;gt; print(type(273)) &amp;lt;class 'int'&amp;gt; # 정수</summary></entry><entry><title type="html">Python 2. 기본기</title><link href="http://0.0.0.0/python/py-02-BasicElements/" rel="alternate" type="text/html" title="Python 2. 기본기" /><published>2020-02-25T00:00:00-06:00</published><updated>2020-02-25T08:00:00-06:00</updated><id>http://0.0.0.0/python/py-02-BasicElements</id><content type="html" xml:base="http://0.0.0.0/python/py-02-BasicElements/">&lt;p&gt;미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;표현식expressions과-문장statements-혹은-commands&quot;&gt;표현식(Expressions)과 문장(Statements 혹은 commands)&lt;/h1&gt;
-&lt;p&gt;파이썬에서 어떠한 값(숫자, 수식, 문자열 등)을 만들어 내는 간단한 코드를 표현식(expressions)이라고 부릅니다.&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mi&quot;&gt;273&lt;/span&gt;                   &lt;span class=&quot;c1&quot;&gt;# expression
-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;# expression
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello python&quot;&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# expression
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;                     &lt;span class=&quot;c1&quot;&gt;# not an expression. + 그것 자체만으로 어떠한 값도 만들어 낼 수 없기 때문에 표현식이 아님.
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello python&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#statement
-&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;키워드keyworkds&quot;&gt;키워드(Keyworkds)&lt;/h1&gt;
-&lt;p&gt;특별한 의미가 부여된 단어로, 파이썬이 만들어질 때 이미 사용하겠다고 약속한 단어를 말하며, 파이썬은 대소문자를 구분하는 프로그래밍 언어이기 때문에 대소문자에 따라서 키워드가 될 수 도 있고 안될 수도 있습니다.&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# keyword
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;true&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;# keyword가 아님.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;만약 사용하고자 하는 단어가 키워드인지 아닌지 확인하고 싶은 경우 아래의 코드로 키워드를 확인할 수 있습니다.&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keyword&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keyword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwlist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'False'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'None'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'True'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'and'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'as'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'assert'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'async'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'await'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'break'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'class'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'continue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'def'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'del'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'elif'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'else'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'except'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'finally'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'for'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'from'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'global'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'if'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'import'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'in'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'is'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'lambda'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'nonlocal'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'not'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'or'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'pass'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'raise'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'return'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'try'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'while'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'with'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'yield'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;식별자identifiers&quot;&gt;식별자(identifiers)&lt;/h1&gt;
-&lt;p&gt;변수(variables) 또는 함수의 이름을 명칭합니다. 코드가 길어지거나 다른 사람이 식별자의 이름만으로도 대충 무엇을 의미하는지 알 수 있도록 의미 있는 단어를 사용하는 것이 좋습니다. 그리고 식별자에는 공백을 사용할 수 없기 때문에, 둘 이상의 단어로 조합이 된 경우 &lt;strong&gt;snake_case&lt;/strong&gt;나 &lt;strong&gt;CamelCase&lt;/strong&gt;를 사용한다. 아래의 규칙을 지키지 않는다고 해서 프로그램 작성에 문제가 되는 것은 아니지만, 파이썬 개발자들이 지켜서 사용하는 규칙이고 식별자만 보았을 때 무엇을 하는 것인지 한번에 이해할 수 있습니다.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;키워드를 사용하면 안됨.&lt;/li&gt;
-  &lt;li&gt;특수 문자는 _만 허용.&lt;/li&gt;
-  &lt;li&gt;숫자로 시작하면 안됨.&lt;/li&gt;
-  &lt;li&gt;공백을 포함할 수 없음.&lt;/li&gt;
-  &lt;li&gt;CamelCase는 두 이름 사이를 대문자로 연결되어 있고, 주로 클래스이름에 사용됨.&lt;/li&gt;
-  &lt;li&gt;snake_case는 두 이름 사이를 _으로 연결되어 있고, 주로 함수(이름 뒤에 ()가 있음) 또는 변수에서 사용됨.&lt;/li&gt;
-  &lt;li&gt;파이썬에서는 둘다 사용이 가능하지만, 첫 번째 글자가 소문자라면 무조건 snake_case를, 대문자라면 CamelCase를 사용한다.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# snake_case이고 함수
-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;          &lt;span class=&quot;c1&quot;&gt;# snake_case이고 함수
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt;         &lt;span class=&quot;c1&quot;&gt;# snake_case이고 변수
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# CamelCase이고 클래스
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# CamelCase이고 클래스. 클래스 생성자라고 부르는 특이한 형태의 함수임.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;주석comments&quot;&gt;주석(Comments)&lt;/h1&gt;
-&lt;p&gt;프로그램의 진행에 영향을 주지 않는 코드로, 프로그램을 설명하기 위해 사용됩니다. 주석 처리를 하고자 하는 부분 앞에 # 기호를 붙여서 주석 처리합니다.&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 이름을 출력하는 예입니다.
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, David!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;# 문자열을 출력합니다.
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;David&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;!&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;&quot;
-여러줄 주석은
-이렇게 
-작성합니다.
-&quot;&quot;&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;References:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Introduction to Computation and Programming Using Python (John Guttag / MIT)&lt;/li&gt;
-    &lt;li&gt;혼자 공부하는 파이썬 (윤인성 / 한빛미디어)&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="기본 용어" /><summary type="html">미국에서 개인적으로 프로그래밍 기본/전문 용어가 익숙하지 못해서 미팅때 이해를 잘 하지 못하고 여러번 물어봐야하는 경우들이 상당이 있었습니다. 무엇보다 기본이 중요하기 때문에, 기본 용어를 잘 이해하고 머리에 박혀 있어야 다른 co-worker들과 협업할 때 대화가 원할 하게 이루어질 수 있습니다.</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>DAVID S. KIM</name></author><category term="python" /><category term="파이썬" /><category term="자료형" /><category term="data types" /><summary type="html">자료형(data type) 자료형이란 파이썬에서 기능과 역할에 따라 구분한 자료의 형식을 말합니다. 데이터의 자료형을 확인할 때는 type() 함수를 사용한다. &amp;gt;&amp;gt;&amp;gt; print(type(&quot;안녕하세요&quot;)) &amp;lt;class 'str'&amp;gt; # 문자열 &amp;gt;&amp;gt;&amp;gt; print(type(273)) &amp;lt;class 'int'&amp;gt; # 정수</summary></entry></feed>
