@@ -11,3 +11,5 @@ last_modified_at: 2020-08-16T23:00:00+09:00
 ## Websites
 - [개발새발 블로그](https://gbsb.tistory.com/410) 
 - [JS Tutorial](https://www.w3schools.com/js/js_intro.asp)
+- [생활코딩](https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA): 코딩 기본 개념 익히기 좋음
+- [Visula Go](https://visualgo.net/en): data structure과 알고리즘 시각화
