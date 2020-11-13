@@ -15,4 +15,4 @@ last_modified_at: 2020-08-16T23:00:00+09:00
 - [Visula Go](https://visualgo.net/en): data structure과 알고리즘 시각화
 
 ## Books
-- [파이썬 머신러닝 완벽 가이드]: 머신러닝 기초 알고리즘부터 캐글 예제까지 초중급자에게 좋은 참고 도서
+- [파이썬 머신러닝 완벽 가이드](https://wikibook.co.kr/join-author/): 머신러닝 기초 알고리즘부터 캐글 예제까지 초중급자에게 좋은 참고 도서
